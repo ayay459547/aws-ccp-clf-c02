@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { Download, Loader2 } from "lucide-react";
+import { Download } from "lucide-react";
 
 import { FULL_AWS_QUIZ_DATA } from "@/lib/questions";
 
@@ -22,18 +22,13 @@ const Export: React.FC<Props> = ({ showChinese }) => {
       margin: 10, // 稍微縮小邊界，讓文字有更多空間
       filename: "AWS_CCP_Quiz_Export.pdf",
       image: { type: "jpeg", quality: 0.98 },
-      // 加上 windowWidth 確保 html2canvas 擷取時能取得完整的容器寬度
       html2canvas: {
         scale: 2,
         useCORS: true,
-        windowWidth: 794,
         scrollX: 0,
         scrollY: 0,
       },
       jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
-      pagebreak: {
-        mode: ["css", "legacy"],
-      },
     } as const;
 
     html2pdf()
@@ -50,19 +45,10 @@ const Export: React.FC<Props> = ({ showChinese }) => {
       <button
         onClick={handleDownloadPdf}
         disabled={isGenerating}
-        className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-600 disabled:bg-amber-300 text-white text-sm py-4 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-amber-500/30 cursor-pointer"
+        className="inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-600 disabled:bg-amber-300 text-white text-sm py-2 px-4 rounded-full transition-all duration-300 shadow-lg hover:shadow-amber-500/30 cursor-pointer"
       >
-        {isGenerating ? (
-          <>
-            <Loader2 className="w-3 h-3 animate-spin" />
-            PDF 產生中...
-          </>
-        ) : (
-          <>
-            <Download className="w-3 h-3 group-hover:-translate-y-1 transition-transform" />
-            下載 PDF 檔案
-          </>
-        )}
+        <Download className="w-3 h-3 group-hover:-translate-y-1 transition-transform" />
+        PDF
       </button>
 
       {/* ========================================================= */}
@@ -79,7 +65,7 @@ const Export: React.FC<Props> = ({ showChinese }) => {
         <div
           ref={pdfContentRef}
           style={{
-            width: "794px",
+            width: "720px",
             boxSizing: "border-box",
             padding: "30px",
             backgroundColor: "#fff",

@@ -14,6 +14,7 @@ import {
 import type { Theme } from "@mui/material";
 
 import { FULL_AWS_QUIZ_DATA } from "@/lib/questions";
+import Export from "@/components/Export";
 
 type Props = {
   theme: Theme;
@@ -94,6 +95,8 @@ const Questions: React.FC<Props> = ({ theme, showChinese }) => {
             }}
             sx={{ maxWidth: { sm: 400 } }}
           />
+
+          <Export showChinese={showChinese} />
         </Stack>
       </Card>
 

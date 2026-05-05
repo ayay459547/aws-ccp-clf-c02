@@ -1,0 +1,186 @@
+[
+  {
+    "qEn": "A company plans to use an Amazon Snowball Edge device to transfer files to the AWS Cloud. Which activities related to a Snowball Edge device are available to the company at no cost?",
+    "qZh": "一家公司計劃使用 Amazon Snowball Edge 設備將檔案傳輸到 AWS 雲端。該公司可以免費使用與 Snowball Edge 設備相關的哪些活動？",
+    "optionsEn": [
+      "Use of the Snowball Edge appliance for a 10-day period",
+      "The transfer of data out of Amazon S3 and to the Snowball Edge appliance",
+      "The transfer of data from the Snowball Edge appliance into Amazon S3",
+      "Daily use of the Snowball Edge appliance after 10 days"
+    ],
+    "optionsZh": [
+      "使用 Snowball Edge 設備 10 天",
+      "將資料從 Amazon S3 傳輸到 Snowball Edge 設備",
+      "將資料從 Snowball Edge 設備傳輸到 Amazon S3",
+      "超過 10 天後每日使用 Snowball Edge 設備"
+    ],
+    "answers": [2],
+    "expEn": "Inbound data transfer (data transfer IN to Amazon S3) is free. You are charged for the device use, and for outbound data transfer.",
+    "expZh": "傳入的資料傳輸 (將資料傳輸到 Amazon S3) 是免費的。您需要為設備的使用以及傳出的資料傳輸付費。"
+  },
+  {
+    "qEn": "A company has deployed applications on Amazon EC2 instances. The company needs to assess application vulnerabilities and must identify infrastructure deployments that do not meet best practices. Which AWS service can the company use to meet these requirements?",
+    "qZh": "一家公司在 Amazon EC2 執行個體上部署了應用程式。該公司需要評估應用程式的漏洞，且必須識別不符合最佳實務的基礎設施部署。該公司可以使用哪項 AWS 服務來滿足這些需求？",
+    "optionsEn": [
+      "AWS Trusted Advisor",
+      "Amazon Inspector",
+      "AWS Config",
+      "Amazon GuardDuty"
+    ],
+    "optionsZh": [
+      "AWS Trusted Advisor",
+      "Amazon Inspector",
+      "AWS Config",
+      "Amazon GuardDuty"
+    ],
+    "answers": [1],
+    "expEn": "Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS by assessing applications for exposure, vulnerabilities, and deviations from best practices.",
+    "expZh": "Amazon Inspector 是一項自動化安全評估服務，藉由評估應用程式是否暴露、有漏洞或偏離最佳實務，協助提升部署在 AWS 上之應用程式的安全與合規性。"
+  },
+  {
+    "qEn": "A company has a centralized group of users with large file storage requirements that have exceeded the space available on premises. The company wants to extend its file storage capabilities for this group while retaining the performance benefit of sharing content locally. What is the MOST operationally efficient AWS solution for this scenario?",
+    "qZh": "一家公司有一個集中的使用者群組，他們有大量的檔案儲存需求，已超出地端可用的空間。該公司希望為此群組擴展檔案儲存功能，同時保留在地端共享內容的效能優勢。針對此情境，最具營運效率的 AWS 解決方案為何？",
+    "optionsEn": [
+      "Create an Amazon S3 bucket for each user. Mount each bucket by using an S3 file system mounting utility.",
+      "Configure and deploy an AWS Storage Gateway file gateway. Connect each user’s workstation to the file gateway.",
+      "Move each user’s working environment to Amazon WorkSpaces. Set up an Amazon WorkDocs account for each user.",
+      "Deploy an Amazon EC2 instance and attach an Amazon Elastic Block Store (Amazon EBS) Provisioned IOPS volume. Share the EBS volume directly with the users."
+    ],
+    "optionsZh": [
+      "為每個使用者建立一個 Amazon S3 儲存貯體。使用 S3 檔案系統掛載公用程式掛載每個儲存貯體。",
+      "設定並部署 AWS Storage Gateway 檔案網關。將每個使用者的工作站連接到檔案網關。",
+      "將每個使用者的工作環境移至 Amazon WorkSpaces。為每個使用者設定 Amazon WorkDocs 帳戶。",
+      "部署 Amazon EC2 執行個體並連接 Amazon Elastic Block Store (Amazon EBS) 預繁 IOPS 磁碟區。直接與使用者共用 EBS 磁碟區。"
+    ],
+    "answers": [1],
+    "expEn": "AWS Storage Gateway (File Gateway) provides on-premises applications with seamless and highly secure access to cloud-backed file storage, caching frequently accessed data locally for low-latency performance.",
+    "expZh": "AWS Storage Gateway (檔案網關) 為地端應用程式提供無縫且高度安全的雲端備份檔案儲存存取，並在本地快取經常存取的資料以提供低延遲效能。"
+  },
+  {
+    "qEn": "According to security best practices, how should an Amazon EC2 instance be given access to an Amazon S3 bucket?",
+    "qZh": "根據安全最佳實務，應如何授予 Amazon EC2 執行個體存取 Amazon S3 儲存貯體的權限？",
+    "optionsEn": [
+      "Hard code an IAM user’s secret key and access key directly in the application, and upload the file.",
+      "Store the IAM user’s secret key and access key in a text file on the EC2 instance, read the keys, then upload the file.",
+      "Have the EC2 instance assume a role to obtain the privileges to upload the file.",
+      "Modify the S3 bucket policy so that any service can upload to it at any time."
+    ],
+    "optionsZh": [
+      "將 IAM 使用者的私密金鑰與存取金鑰直接寫死在應用程式中，然後上傳檔案。",
+      "將 IAM 使用者的私密金鑰與存取金鑰儲存在 EC2 執行個體的文字檔中，讀取金鑰，然後上傳檔案。",
+      "讓 EC2 執行個體代入 (assume) 角色以獲取上傳檔案的權限。",
+      "修改 S3 儲存貯體政策，讓任何服務都能隨時上傳。"
+    ],
+    "answers": [2],
+    "expEn": "IAM Roles are the most secure way to grant AWS resources (like EC2 instances) permissions to other AWS services (like S3) without hardcoding or storing long-term credentials.",
+    "expZh": "IAM 角色是授予 AWS 資源 (如 EC2 執行個體) 存取其他 AWS 服務 (如 S3) 權限的最安全方式，無需寫死或儲存長期的憑證。"
+  },
+  {
+    "qEn": "Which option is a customer responsibility when using Amazon DynamoDB under the AWS Shared Responsibility Model?",
+    "qZh": "在 AWS 共同責任模型下，使用 Amazon DynamoDB 時，哪一個選項是客戶的責任？",
+    "optionsEn": [
+      "Physical security of DynamoDB",
+      "Patching of DynamoDB",
+      "Access to DynamoDB tables",
+      "Encryption of data at rest in DynamoDB"
+    ],
+    "optionsZh": [
+      "DynamoDB 的實體安全",
+      "DynamoDB 的修補",
+      "DynamoDB 資料表的存取權限",
+      "DynamoDB 中靜態資料的加密"
+    ],
+    "answers": [2],
+    "expEn": "DynamoDB is a managed service. AWS handles physical security, patching, and underlying infrastructure. The customer is responsible for managing data, configuring access (IAM policies), and utilizing encryption.",
+    "expZh": "DynamoDB 是受管服務。AWS 負責實體安全、修補與底層基礎設施。客戶負責管理資料、設定存取權限 (IAM 政策) 及運用加密。"
+  },
+  {
+    "qEn": "Which option is a perspective that includes foundational capabilities of the AWS Cloud Adoption Framework (AWS CAF)?",
+    "qZh": "哪一個選項是 AWS 雲端採用框架 (AWS CAF) 中包含基礎能力的視角 (Perspective)？",
+    "optionsEn": [
+      "Sustainability",
+      "Performance efficiency",
+      "Governance",
+      "Reliability"
+    ],
+    "optionsZh": [
+      "永續性 (Sustainability)",
+      "效能效率 (Performance efficiency)",
+      "治理 (Governance)",
+      "可靠性 (Reliability)"
+    ],
+    "answers": [2],
+    "expEn": "The AWS CAF has 6 perspectives: Business, People, Governance, Platform, Security, and Operations. Sustainability, Performance Efficiency, and Reliability are pillars of the Well-Architected Framework, not CAF perspectives.",
+    "expZh": "AWS CAF 有 6 個視角：業務、人員、治理 (Governance)、平台、安全和營運。永續性、效能效率與可靠性是 Well-Architected Framework 的支柱，而非 CAF 視角。"
+  },
+  {
+    "qEn": "A company is running and managing its own Docker environment on Amazon EC2 instances. The company wants an alternative to help manage cluster size, scheduling, and environment maintenance. Which AWS service meets these requirements?",
+    "qZh": "一家公司在 Amazon EC2 執行個體上執行和管理自己的 Docker 環境。該公司需要一個替代方案來協助管理叢集大小、排程和環境維護。哪一項 AWS 服務能滿足這些需求？",
+    "optionsEn": ["AWS Lambda", "Amazon RDS", "AWS Fargate", "Amazon Athena"],
+    "optionsZh": ["AWS Lambda", "Amazon RDS", "AWS Fargate", "Amazon Athena"],
+    "answers": [2],
+    "expEn": "AWS Fargate is a serverless compute engine for containers that works with ECS and EKS. It eliminates the need to provision and manage the underlying EC2 instances for your clusters.",
+    "expZh": "AWS Fargate 是一款適用於容器的無伺服器運算引擎，可與 ECS 和 EKS 搭配使用。它免除了為叢集預置和管理底層 EC2 執行個體的需求。"
+  },
+  {
+    "qEn": "A company wants to run a NoSQL database on Amazon EC2 instances. Which task is the responsibility of AWS in this scenario?",
+    "qZh": "一家公司希望在 Amazon EC2 執行個體上執行 NoSQL 資料庫。在此情境下，哪一項任務是 AWS 的責任？",
+    "optionsEn": [
+      "Update the guest operating system of the EC2 instances.",
+      "Maintain high availability at the database layer.",
+      "Patch the physical infrastructure that hosts the EC2 instances.",
+      "Configure the security group firewall."
+    ],
+    "optionsZh": [
+      "更新 EC2 執行個體的訪客作業系統。",
+      "維持資料庫層的高可用性。",
+      "修補託管 EC2 執行個體的實體基礎設施。",
+      "設定安全群組防火牆。"
+    ],
+    "answers": [2],
+    "expEn": "Because the customer is using EC2 (IaaS), AWS is responsible for the 'Security OF the Cloud', which includes the physical infrastructure (hardware, hosts, networking). The customer manages the guest OS, database HA, and security groups.",
+    "expZh": "由於客戶使用的是 EC2 (IaaS)，AWS 負責「雲端本身的安全性」，包含實體基礎設施 (硬體、主機、網路)。客戶則負責管理訪客作業系統、資料庫高可用性與安全群組。"
+  },
+  {
+    "qEn": "Which AWS services or tools can identify rightsizing opportunities for Amazon EC2 instances? (Choose two.)",
+    "qZh": "哪些 AWS 服務或工具可以識別 Amazon EC2 執行個體的規模調整 (Rightsizing) 機會？（請選擇兩項）",
+    "optionsEn": [
+      "AWS Cost Explorer",
+      "AWS Billing Conductor",
+      "Amazon CodeGuru",
+      "Amazon SageMaker",
+      "AWS Compute Optimizer"
+    ],
+    "optionsZh": [
+      "AWS Cost Explorer",
+      "AWS Billing Conductor",
+      "Amazon CodeGuru",
+      "Amazon SageMaker",
+      "AWS Compute Optimizer"
+    ],
+    "answers": [0, 4],
+    "expEn": "AWS Compute Optimizer provides EC2 instance rightsizing recommendations based on machine learning. AWS Cost Explorer also offers resource optimization recommendations (including rightsizing EC2) based on past usage.",
+    "expZh": "AWS Compute Optimizer 根據機器學習提供 EC2 執行個體的規模調整建議。AWS Cost Explorer 也提供基於過去使用情況的資源最佳化建議 (包含 EC2 規模調整)。"
+  },
+  {
+    "qEn": "Which of the following are benefits of using AWS Trusted Advisor? (Choose two.)",
+    "qZh": "下列哪些是使用 AWS Trusted Advisor 的好處？（請選擇兩項）",
+    "optionsEn": [
+      "Providing high-performance container orchestration",
+      "Creating and rotating encryption keys",
+      "Detecting underutilized resources to save costs",
+      "Improving security by proactively monitoring the AWS environment",
+      "Implementing enforced tagging across AWS resources"
+    ],
+    "optionsZh": [
+      "提供高效能的容器編排",
+      "建立和輪換加密金鑰",
+      "偵測未充分利用的資源以節省成本",
+      "透過主動監控 AWS 環境來提升安全性",
+      "在 AWS 資源之間實施強制標籤"
+    ],
+    "answers": [2, 3],
+    "expEn": "AWS Trusted Advisor helps you optimize your AWS infrastructure, increase security and performance, reduce your overall costs (by detecting underutilized resources), and monitor service limits.",
+    "expZh": "AWS Trusted Advisor 可協助您優化 AWS 基礎設施、提升安全與效能、降低整體成本 (透過偵測未充分利用的資源)，並監控服務配額。"
+  }
+]

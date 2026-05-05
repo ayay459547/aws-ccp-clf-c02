@@ -1,0 +1,194 @@
+[
+  {
+    "qEn": "Which of the following is an advantage that users experience when they move on-premises workloads to the AWS Cloud?",
+    "qZh": "當使用者將地端工作負載轉移到 AWS 雲端時，下列哪一項是他們會體驗到的優勢？",
+    "optionsEn": [
+      "Elimination of expenses for running and maintaining data centers",
+      "Price discounts that are identical to discounts from hardware providers",
+      "Distribution of all operational controls to AWS",
+      "Elimination of operational expenses"
+    ],
+    "optionsZh": [
+      "消除執行與維護資料中心的費用",
+      "提供與硬體供應商相同的價格折扣",
+      "將所有營運控制權交給 AWS",
+      "消除營運費用 (OpEx)"
+    ],
+    "answers": [0],
+    "expEn": "One of the six advantages of cloud computing is to stop spending money on running and maintaining data centers. You focus on your own applications and customers, rather than the heavy lifting of racking, stacking, and powering servers.",
+    "expZh": "雲端運算的六大優勢之一是「停止花費在執行與維護資料中心上」。您可以將心力集中在自己的應用程式和客戶上，而不是處理伺服器上架、堆疊與供電等繁重工作。"
+  },
+  {
+    "qEn": "A company wants to manage deployed IT services and govern its infrastructure as code (IaC) templates. Which AWS service will meet this requirement?",
+    "qZh": "一家公司希望管理已部署的 IT 服務，並治理其基礎設施即代碼 (IaC) 範本。哪一項 AWS 服務能滿足此需求？",
+    "optionsEn": [
+      "AWS Resource Explorer",
+      "AWS Service Catalog",
+      "AWS Organizations",
+      "AWS Systems Manager"
+    ],
+    "optionsZh": [
+      "AWS Resource Explorer",
+      "AWS Service Catalog",
+      "AWS Organizations",
+      "AWS Systems Manager"
+    ],
+    "answers": [1],
+    "expEn": "AWS Service Catalog allows organizations to create and manage catalogs of IT services that are approved for use on AWS. These services can include everything from virtual machine images, servers, software, and databases to complete multi-tier application architectures.",
+    "expZh": "AWS Service Catalog 讓組織可以建立與管理獲准在 AWS 上使用的 IT 服務目錄。這些服務可以包含虛擬機器映像檔、伺服器、軟體和資料庫，甚至是完整的多層應用程式架構。"
+  },
+  {
+    "qEn": "Which AWS service or tool helps users visualize, understand, and manage spending and usage over time?",
+    "qZh": "哪一項 AWS 服務或工具能協助使用者視覺化、理解並管理隨時間推移的花費與使用量？",
+    "optionsEn": [
+      "AWS Organizations",
+      "AWS Pricing Calculator",
+      "AWS Cost Explorer",
+      "AWS Service Catalog"
+    ],
+    "optionsZh": [
+      "AWS Organizations",
+      "AWS Pricing Calculator",
+      "AWS Cost Explorer",
+      "AWS Service Catalog"
+    ],
+    "answers": [2],
+    "expEn": "AWS Cost Explorer has an easy-to-use interface that lets you visualize, understand, and manage your AWS costs and usage over time.",
+    "expZh": "AWS Cost Explorer 提供易於使用的介面，讓您可以視覺化、理解並管理隨時間推移的 AWS 成本與使用量。"
+  },
+  {
+    "qEn": "A company is using a central data platform to manage multiple types of data for its customers. The company wants to use AWS services to discover, transform, and visualize the data. Which combination of AWS services should the company use to meet these requirements? (Choose two.)",
+    "qZh": "一家公司使用集中式資料平台為其客戶管理多種類型的資料。該公司希望使用 AWS 服務來發現、轉換與視覺化資料。該公司應使用哪種 AWS 服務組合來滿足這些需求？（請選擇兩項）",
+    "optionsEn": [
+      "AWS Glue",
+      "Amazon Elastic File System (Amazon EFS)",
+      "Amazon Redshift",
+      "Amazon QuickSight",
+      "Amazon Quantum Ledger Database (Amazon QLDB)"
+    ],
+    "optionsZh": [
+      "AWS Glue",
+      "Amazon Elastic File System (Amazon EFS)",
+      "Amazon Redshift",
+      "Amazon QuickSight",
+      "Amazon Quantum Ledger Database (Amazon QLDB)"
+    ],
+    "answers": [0, 3],
+    "expEn": "AWS Glue is a serverless data integration service that makes it easy to discover, prepare, and combine data for analytics, machine learning, and application development (transform). Amazon QuickSight is a scalable, serverless, embeddable, machine learning-powered business intelligence (BI) service built for the cloud (visualize).",
+    "expZh": "AWS Glue 是一種無伺服器資料整合服務，讓您能輕鬆地發現、準備和合併資料，以供分析、機器學習與應用程式開發使用 (轉換)。Amazon QuickSight 是專為雲端打造、可擴展、無伺服器、可嵌入且由機器學習驅動的商業智慧 (BI) 服務 (視覺化)。"
+  },
+  {
+    "qEn": "A global company wants to migrate its third-party applications to the AWS Cloud. The company wants help from a global team of experts to complete the migration faster and more reliably in accordance with AWS internal best practices. Which AWS service or resource will meet these requirements?",
+    "qZh": "一家全球性公司希望將其第三方應用程式遷移至 AWS 雲端。該公司希望能獲得全球專家團隊的協助，以根據 AWS 內部最佳實務，更快速且更可靠地完成遷移。哪一項 AWS 服務或資源能滿足這些需求？",
+    "optionsEn": [
+      "AWS Support",
+      "AWS Professional Services",
+      "AWS Launch Wizard",
+      "AWS Managed Services (AMS)"
+    ],
+    "optionsZh": [
+      "AWS 支援 (AWS Support)",
+      "AWS 專業服務 (AWS Professional Services)",
+      "AWS Launch Wizard",
+      "AWS 受管服務 (AWS Managed Services, AMS)"
+    ],
+    "answers": [1],
+    "expEn": "The AWS Professional Services organization is a global team of experts that can help you realize your desired business outcomes when using the AWS Cloud. They work together with your team and your chosen member of the AWS Partner Network (APN) to execute your enterprise cloud computing initiatives.",
+    "expZh": "AWS 專業服務 (Professional Services) 組織是一個全球專家團隊，能在您使用 AWS 雲端時協助您實現預期的業務成果。他們會與您的團隊以及您選擇的 AWS 合作夥伴網路 (APN) 成員合作，執行您的企業雲端運算計畫。"
+  },
+  {
+    "qEn": "An e-learning platform needs to run an application for 2 months each year. The application will be deployed on Amazon EC2 instances. Any application downtime during those 2 months must be avoided. Which EC2 purchasing option will meet these requirements MOST cost-effectively?",
+    "qZh": "一個電子學習平台每年需要執行一個應用程式 2 個月。該應用程式將部署在 Amazon EC2 執行個體上。必須避免在這 2 個月內發生任何應用程式停機。哪一種 EC2 購買選項能最經濟實惠地滿足這些需求？",
+    "optionsEn": [
+      "Reserved Instances",
+      "Dedicated Hosts",
+      "Spot Instances",
+      "On-Demand Instances"
+    ],
+    "optionsZh": [
+      "預留執行個體 (Reserved Instances)",
+      "專用主機 (Dedicated Hosts)",
+      "競價型執行個體 (Spot Instances)",
+      "隨需執行個體 (On-Demand Instances)"
+    ],
+    "answers": [3],
+    "expEn": "On-Demand Instances let you pay for compute capacity by the hour or second with no long-term commitments. This is the most cost-effective option for short-term (2 months), spiky, or unpredictable workloads that cannot be interrupted. Reserved Instances require at least a 1-year commitment, and Spot Instances can be interrupted.",
+    "expZh": "隨需執行個體讓您可以按小時或按秒支付運算容量費用，且無需長期承諾。對於不可中斷的短期 (2 個月)、有峰值或不可預測的工作負載，這是最具成本效益的選項。預留執行個體至少需要 1 年的承諾期，而競價型執行個體可能會被中斷。"
+  },
+  {
+    "qEn": "A developer wants to deploy an application quickly on AWS without manually creating the required resources. Which AWS service will meet these requirements?",
+    "qZh": "開發人員希望在 AWS 上快速部署應用程式，而無需手動建立所需資源。哪一項 AWS 服務能滿足這些需求？",
+    "optionsEn": [
+      "Amazon EC2",
+      "AWS Elastic Beanstalk",
+      "AWS CodeBuild",
+      "Amazon Personalize"
+    ],
+    "optionsZh": [
+      "Amazon EC2",
+      "AWS Elastic Beanstalk",
+      "AWS CodeBuild",
+      "Amazon Personalize"
+    ],
+    "answers": [1],
+    "expEn": "AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling web applications and services. You can simply upload your code and Elastic Beanstalk automatically handles the deployment, from capacity provisioning, load balancing, auto-scaling to application health monitoring.",
+    "expZh": "AWS Elastic Beanstalk 是一項易於使用的服務，用於部署和擴展 Web 應用程式與服務。您只需上傳程式碼，Elastic Beanstalk 就會自動處理從容量預置、負載平衡、自動擴展到應用程式運作狀態監控等部署工作。"
+  },
+  {
+    "qEn": "A company is storing sensitive customer data in an Amazon S3 bucket. The company wants to protect the data from accidental deletion or overwriting. Which S3 feature should the company use to meet these requirements?",
+    "qZh": "一家公司在 Amazon S3 儲存貯體中儲存敏感的客戶資料。該公司希望保護資料免遭意外刪除或覆寫。該公司應使用哪一項 S3 功能來滿足這些需求？",
+    "optionsEn": [
+      "S3 Lifecycle rules",
+      "S3 Versioning",
+      "S3 bucket policies",
+      "S3 server-side encryption"
+    ],
+    "optionsZh": [
+      "S3 生命週期規則",
+      "S3 版本控制 (Versioning)",
+      "S3 儲存貯體政策",
+      "S3 伺服器端加密"
+    ],
+    "answers": [1],
+    "expEn": "Versioning is a means of keeping multiple variants of an object in the same bucket. You can use S3 Versioning to preserve, retrieve, and restore every version of every object stored in your buckets. You can easily recover from both unintended user actions and application failures.",
+    "expZh": "版本控制是在同一個儲存貯體中保留物件的多個變體的作法。您可以使用 S3 版本控制來保留、擷取與還原儲存在貯體中每個物件的每個版本。您可以輕鬆地從使用者的意外動作與應用程式故障中復原資料。"
+  },
+  {
+    "qEn": "Which AWS service provides the ability to manage infrastructure as code?",
+    "qZh": "哪一項 AWS 服務具備將基礎設施即代碼 (Infrastructure as Code) 進行管理的能力？",
+    "optionsEn": [
+      "AWS CodePipeline",
+      "AWS CodeDeploy",
+      "AWS Direct Connect",
+      "AWS CloudFormation"
+    ],
+    "optionsZh": [
+      "AWS CodePipeline",
+      "AWS CodeDeploy",
+      "AWS Direct Connect",
+      "AWS CloudFormation"
+    ],
+    "answers": [3],
+    "expEn": "AWS CloudFormation gives you an easy way to model a collection of related AWS and third-party resources, provision them quickly and consistently, and manage them throughout their lifecycles, by treating infrastructure as code.",
+    "expZh": "AWS CloudFormation 為您提供了一種簡單的方法，可對相關 AWS 及第三方資源的集合進行塑模，透過將基礎設施視為代碼 (IaC)，快速且一致地預置這些資源，並在整個生命週期中進行管理。"
+  },
+  {
+    "qEn": "An online gaming company needs to choose a purchasing option to run its Amazon EC2 instances for 1 year. The web traffic is consistent, and any increases in traffic are predictable. The EC2 instances must be online and available without any disruption. Which EC2 instance purchasing option will meet these requirements MOST cost-effectively?",
+    "qZh": "一家線上遊戲公司需要選擇一種購買選項，來執行其 Amazon EC2 執行個體為期 1 年。其網路流量是一致的，且任何流量增長都是可預測的。這些 EC2 執行個體必須保持上線可用，不能有任何中斷。哪一種 EC2 執行個體購買選項能最經濟實惠地滿足這些需求？",
+    "optionsEn": [
+      "On-Demand Instances",
+      "Reserved Instances",
+      "Spot Instances",
+      "Spot Fleet"
+    ],
+    "optionsZh": [
+      "隨需執行個體 (On-Demand Instances)",
+      "預留執行個體 (Reserved Instances)",
+      "競價型執行個體 (Spot Instances)",
+      "競價型機群 (Spot Fleet)"
+    ],
+    "answers": [1],
+    "expEn": "Amazon EC2 Reserved Instances (RI) provide a significant discount (up to 72%) compared to On-Demand pricing and provide a capacity reservation when used in a specific Availability Zone. They are best suited for applications with steady state or predictable usage that require a 1- or 3-year commitment.",
+    "expZh": "相較於隨需定價，Amazon EC2 預留執行個體 (RI) 提供顯著的折扣 (最高 72%)，並在特定可用區域中使用時提供容量預留。它們最適合具有穩定狀態或可預測使用量、且需要 1 年或 3 年承諾期的應用程式。"
+  }
+]

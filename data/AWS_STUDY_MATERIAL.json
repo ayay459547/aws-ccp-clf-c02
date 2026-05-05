@@ -1,0 +1,108 @@
+[
+  {
+    "domainEn": "Domain 1: Cloud Concepts",
+    "domainZh": "領域 1：雲端概念",
+    "weight": "24%",
+    "topics": [
+      {
+        "titleEn": "Six Advantages of Cloud Computing",
+        "titleZh": "AWS 六大優勢",
+        "contentEn": "1. Trade capital expense for variable expense\n2. Benefit from massive economies of scale\n3. Stop guessing capacity\n4. Increase speed and agility\n5. Stop spending money running and maintaining data centers\n6. Go global in minutes",
+        "contentZh": "1. 將資本支出轉換為變動支出\n2. 享受巨大的規模經濟效益\n3. 停止猜測容量\n4. 提高速度和敏捷性\n5. 停止花錢運行和維護資料中心\n6. 幾分鐘內實現全球化部署"
+      },
+      {
+        "titleEn": "Three Cloud Service Models",
+        "titleZh": "三大雲端服務模型",
+        "contentEn": "• IaaS (Infrastructure as a Service): Highly flexible, manages servers like Amazon EC2.\n• PaaS (Platform as a Service): Focus on application deployment, no need to manage underlying infrastructure like AWS Elastic Beanstalk.\n• SaaS (Software as a Service): Complete product service like Gmail, Amazon SageMaker.",
+        "contentZh": "• IaaS (基礎設施即服務)：高度靈活，管理伺服器 (如 Amazon EC2)。\n• PaaS (平台即服務)：專注應用程式部署，無需管理底層 (如 AWS Elastic Beanstalk)。\n• SaaS (軟體即服務)：完整的產品服務 (如 Gmail, Amazon SageMaker)。"
+      },
+      {
+        "titleEn": "Cloud Deployment Models",
+        "titleZh": "雲端部署模型",
+        "contentEn": "• Public Cloud\n• Hybrid Cloud: Combines on-premises and cloud resources\n• Private Cloud / On-premises",
+        "contentZh": "• 公有雲\n• 混合雲：結合地端與雲端資源\n• 私有雲 / 地端部署"
+      }
+    ]
+  },
+  {
+    "domainEn": "Domain 2: Security & Compliance",
+    "domainZh": "領域 2：安全性與合規",
+    "weight": "30%",
+    "topics": [
+      {
+        "titleEn": "Shared Responsibility Model",
+        "titleZh": "共同責任模型",
+        "contentEn": "• Security OF the Cloud - AWS's responsibility: Physical data centers, hardware, global network infrastructure.\n• Security IN the Cloud - Customer's responsibility: Customer data, IAM access management, OS patching, network firewalls like Security Groups, and data encryption.",
+        "contentZh": "• 雲端本身的安全性 (Security OF the Cloud) - AWS 的責任：實體資料中心、硬體、全球網路基礎設施。\n• 雲端內部的安全性 (Security IN the Cloud) - 客戶的責任：客戶資料、IAM 權限管理、作業系統修補、網路防火牆 (如安全群組) 與資料加密。"
+      },
+      {
+        "titleEn": "AWS IAM - Identity and Access Management",
+        "titleZh": "身分與存取管理",
+        "contentEn": "Controls who can access AWS resources. Core principle is the \"Principle of Least Privilege\".\n• Users: People or applications.\n• Groups: Collections of users.\n• Roles: Assumed by AWS services to gain temporary permissions.\n• Policies: JSON documents defining permissions.",
+        "contentZh": "控制誰能存取 AWS 資源。核心原則是「最小權限原則」。\n• 使用者 (Users)：人員或應用程式。\n• 群組 (Groups)：包含使用者的集合。\n• 角色 (Roles)：分配給 AWS 服務以暫時獲得權限。\n• 政策 (Policies)：定義權限的 JSON 文件。"
+      },
+      {
+        "titleEn": "Security Services",
+        "titleZh": "安全性防護服務",
+        "contentEn": "• AWS WAF (Web Application Firewall): Protects web applications from common attacks like SQL Injection.\n• AWS Shield: Protects against DDoS attacks; Standard tier is free.\n• Amazon Macie: Uses machine learning to discover and protect sensitive data in S3.",
+        "contentZh": "• AWS WAF：保護 Web 應用程式免受常見攻擊 (如 SQL 注入)。\n• AWS Shield：防止 DDoS 攻擊 (Standard 版本為免費提供)。\n• Amazon Macie：利用機器學習發現與保護 S3 中的敏感資料。"
+      }
+    ]
+  },
+  {
+    "domainEn": "Domain 3: Core Services",
+    "domainZh": "領域 3：核心服務與架構",
+    "weight": "34%",
+    "topics": [
+      {
+        "titleEn": "Compute",
+        "titleZh": "運算",
+        "contentEn": "• Amazon EC2: Provides virtual servers with full control of the OS.\n• AWS Lambda: Serverless compute, pay only for code execution time, no servers to manage.\n• Amazon ECS/EKS: Services for container orchestration.",
+        "contentZh": "• Amazon EC2：提供虛擬伺服器，對作業系統有完全控制權。\n• AWS Lambda：無伺服器 (Serverless) 運算，只需為程式碼執行時間付費，無需管理伺服器。\n• Amazon ECS/EKS：用於管理 Docker 容器的服務。"
+      },
+      {
+        "titleEn": "Storage",
+        "titleZh": "儲存",
+        "contentEn": "• Amazon S3: Object storage, high durability, suitable for backups and static website hosting.\n• Amazon EBS: Block storage, must be attached to an EC2 instance, suitable for databases.\n• Amazon S3 Glacier: Extremely low-cost service for data archiving and long-term backup.",
+        "contentZh": "• Amazon S3：物件儲存，高耐久性，適合備份與靜態網站託管。\n• Amazon EBS：區塊儲存，必須附加到 EC2 實例上使用，適合資料庫。\n• Amazon S3 Glacier：極低成本的資料封存與長期備份服務。"
+      },
+      {
+        "titleEn": "Database",
+        "titleZh": "資料庫",
+        "contentEn": "• Amazon RDS: Relational database supporting MySQL, PostgreSQL, etc.\n• Amazon DynamoDB: Serverless, low-latency NoSQL key-value database.\n• Amazon Redshift: Data warehouse designed for big data analytics.",
+        "contentZh": "• Amazon RDS：關聯式資料庫 (支援 MySQL, PostgreSQL 等)。\n• Amazon DynamoDB：無伺服器、低延遲的 NoSQL 鍵值資料庫。\n• Amazon Redshift：為大數據分析設計的資料倉儲。"
+      },
+      {
+        "titleEn": "Networking & Content Delivery",
+        "titleZh": "網路與內容傳遞",
+        "contentEn": "• Amazon VPC: Launch AWS resources in a logically isolated virtual network.\n• Amazon Route 53: Highly available and scalable cloud DNS web service.\n• Amazon CloudFront: Content Delivery Network (CDN) delivering static and dynamic content with low latency globally.",
+        "contentZh": "• Amazon VPC：讓您在邏輯隔離的虛擬網路中啟動 AWS 資源。\n• Amazon Route 53：高可用性且可擴展的雲端網域名稱系統 (DNS) Web 服務。\n• Amazon CloudFront：內容傳遞網路 (CDN)，以低延遲向全球使用者交付靜態與動態內容。"
+      }
+    ]
+  },
+  {
+    "domainEn": "Domain 4: Billing & Pricing",
+    "domainZh": "領域 4：計費、定價與支援",
+    "weight": "12%",
+    "topics": [
+      {
+        "titleEn": "EC2 Pricing Models",
+        "titleZh": "EC2 定價模型",
+        "contentEn": "• On-Demand Instances: No long-term commitment, pay by the second/hour, highest flexibility.\n• Reserved Instances: 1 or 3-year commitment, highest discount, suitable for predictable workloads.\n• Spot Instances: Uses spare AWS capacity, extremely cheap but can be interrupted, suitable for fault-tolerant workloads.\n• Dedicated Hosts: Physical servers dedicated to you for strict licensing and compliance needs.",
+        "contentZh": "• 隨需執行個體 (On-Demand)：無長期承諾，按秒/小時付費，靈活度最高。\n• 預留執行個體 (Reserved)：承諾 1 或 3 年，享有最高折扣，適合穩定用量。\n• 競價型執行個體 (Spot)：利用 AWS 閒置容量，極度便宜但隨時可能被中斷，適合容錯工作。\n• 專用主機 (Dedicated Hosts)：實體伺服器完全供您使用，滿足嚴格的軟體授權與合規需求。"
+      },
+      {
+        "titleEn": "AWS Support Plans",
+        "titleZh": "AWS 支援計畫",
+        "contentEn": "• Basic Support: Customer service and documentation access.\n• Developer Support: Business hours technical support.\n• Business Support: 24/7 technical support for production environments.\n• Enterprise Support: Includes a designated Technical Account Manager (TAM).",
+        "contentZh": "• Basic 計畫：客戶服務與文件存取。\n• Developer 計畫：營業時間內技術支援。\n• Business 計畫：生產環境全天候技術支援。\n• Enterprise 計畫：配備專屬的技術客戶經理 (TAM)。"
+      },
+      {
+        "titleEn": "Billing & Management Tools",
+        "titleZh": "計費管理工具",
+        "contentEn": "• AWS Cost Explorer: Visualize and forecast costs.\n• AWS Budgets: Set custom budgets and receive alerts when exceeding them.\n• AWS Pricing Calculator: Estimate monthly costs before provisioning resources.",
+        "contentZh": "• AWS Cost Explorer：視覺化分析與預測已經發生的成本。\n• AWS Budgets：設定自訂預算，超支時發送提醒。\n• AWS Pricing Calculator：在建置資源前，預估每月成本。"
+      }
+    ]
+  }
+]

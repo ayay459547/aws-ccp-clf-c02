@@ -1,6 +1,4 @@
-# AWS-CCP-EXAM (MOCK)
-
-### CLF-C02
+# AWS-CCP-CLF-C02
 
 ### AWS Certified Cloud Practitioner
 

@@ -217,9 +217,6 @@ const Exam: React.FC<Props> = ({ theme, showChinese }) => {
             <Typography variant="body1" color="text.secondary">
               Customize your practice session before starting.
             </Typography>
-            <Typography variant="body1" color="text.secondary">
-              Last updated on April 29, 2026.
-            </Typography>
           </Box>
 
           {/* 測驗設定區域 */}

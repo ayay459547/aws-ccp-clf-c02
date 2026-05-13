@@ -31,6 +31,7 @@ const Questions = dynamic(() => import("@/components/Questions"), {
   loading: () => <LoadingSpinner />,
   // ssr: false
 });
+import MyDraggableGithubIcon from "@/components/MyDraggableGithubIcon";
 
 // --- Material UI 主題設定 ---
 const theme = createTheme({
@@ -134,7 +135,7 @@ export default function App() {
                       fontWeight: "normal",
                     }}
                   >
-                    Exam Prep
+                    Notes
                   </span>
                 </Typography>
               </Box>
@@ -261,6 +262,8 @@ export default function App() {
             })}
           </BottomNavigation>
         </Paper>
+
+        <MyDraggableGithubIcon />
 
         <style
           dangerouslySetInnerHTML={{

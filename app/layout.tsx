@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   // 設定 Base URL（解決相對路徑問題）
-  metadataBase: new URL("https://aws-ccp-clf-c02.chen-chan-hsieh.cc/"), // 替換成你的實際上線網址
+  metadataBase: new URL("https://aws-ccp-clf-c02.chen-chan-hsieh.cc/"),
 
   // 優化標題 (支援子頁面的動態標題)
   title: {
@@ -59,7 +59,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en" // 如果你的筆記是中文，記得改成 lang="zh-TW"
+      lang="zh-TW"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">

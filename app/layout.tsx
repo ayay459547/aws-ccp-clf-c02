@@ -34,6 +34,8 @@ export const metadata: Metadata = {
     "CLF-C02",
     "Cloud Practitioner",
     "AWS Certification",
+    "AWS Certified Cloud Practitioner",
+    "Mock Exam",
     "Study Notes",
   ],
   authors: [{ name: "CHEN CHAN HSIEH", url: "https://github.com/ayay459547" }],

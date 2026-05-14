@@ -11,17 +11,17 @@ import {
   Stack,
   Button,
 } from "@mui/material";
-import type { Theme } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 import { FULL_AWS_QUIZ_DATA } from "@/lib/questions";
 import Export from "@/components/Export";
 
 type Props = {
-  theme: Theme;
   showChinese: boolean;
 };
 
-const Questions: React.FC<Props> = ({ theme, showChinese }) => {
+const Questions: React.FC<Props> = ({ showChinese }) => {
+  const theme = useTheme();
   // --- 狀態管理 ---
   const [searchTerm, setSearchTerm] = useState<string>("");
   const [currentIndex, setCurrentIndex] = useState<number>(0);

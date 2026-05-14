@@ -3,6 +3,7 @@
     "domainEn": "Domain 1: Cloud Concepts",
     "domainZh": "領域 1：雲端概念",
     "weight": "24%",
+    "link": "domain-1",
     "topics": [
       {
         "titleEn": "Six Advantages of Cloud Computing",
@@ -28,6 +29,7 @@
     "domainEn": "Domain 2: Security & Compliance",
     "domainZh": "領域 2：安全性與合規",
     "weight": "30%",
+    "link": "domain-2",
     "topics": [
       {
         "titleEn": "Shared Responsibility Model",
@@ -53,6 +55,7 @@
     "domainEn": "Domain 3: Core Services",
     "domainZh": "領域 3：核心服務與架構",
     "weight": "34%",
+    "link": "domain-3",
     "topics": [
       {
         "titleEn": "Compute",
@@ -84,6 +87,7 @@
     "domainEn": "Domain 4: Billing & Pricing",
     "domainZh": "領域 4：計費、定價與支援",
     "weight": "12%",
+    "link": "domain-4",
     "topics": [
       {
         "titleEn": "EC2 Pricing Models",

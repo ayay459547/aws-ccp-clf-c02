@@ -9,6 +9,7 @@ export interface StudyDomain {
   domainEn: string;
   domainZh: string;
   weight: string;
+  link: string;
   topics: Topic[];
 }
 

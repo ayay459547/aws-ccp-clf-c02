@@ -28,17 +28,17 @@ import {
   TextField,
   Checkbox,
 } from "@mui/material";
-import type { Theme } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 import type { QuizQuestion, SelectedAnswers } from "@/types";
 import { FULL_AWS_QUIZ_DATA } from "@/lib/questions";
 
 type Props = {
-  theme: Theme;
   showChinese: boolean;
 };
 
-const Exam: React.FC<Props> = ({ theme, showChinese }) => {
+const Exam: React.FC<Props> = ({ showChinese }) => {
+  const theme = useTheme();
   // --- 測驗設定狀態 ---
   const [questionCount, setQuestionCount] = useState<number>(10);
   const [timeLimit, setTimeLimit] = useState<number>(0); // 0 代表不限時 (分鐘)
@@ -194,7 +194,7 @@ const Exam: React.FC<Props> = ({ theme, showChinese }) => {
             <Box
               sx={{
                 width: 48,
-                height: 48,
+                height: 32,
                 borderRadius: "50%",
                 bgcolor: "primary.50",
                 display: "flex",

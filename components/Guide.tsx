@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, SquareArrowOutUpRight } from "lucide-react";
 import {
   Box,
   Typography,
@@ -10,18 +10,25 @@ import {
   Stack,
   Chip,
 } from "@mui/material";
-import type { Theme } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import { useRouter } from "next/navigation";
 
 import type { StudyDomain } from "@/types";
 import data from "@/data/AWS_STUDY_MATERIAL.json";
 const AWS_STUDY_MATERIAL: StudyDomain[] = data;
 
 type Props = {
-  theme: Theme;
   showChinese: boolean;
 };
 
-const Guide: React.FC<Props> = ({ theme, showChinese }) => {
+const Guide: React.FC<Props> = ({ showChinese }) => {
+  const theme = useTheme();
+
+  const router = useRouter();
+  const handleClick = (link: string) => {
+    router.push(link);
+  };
+
   return (
     <Box sx={{ animation: "fadeIn 0.5s ease-in-out" }}>
       <Box sx={{ mb: 4, textAlign: "center" }}>
@@ -81,6 +88,18 @@ const Guide: React.FC<Props> = ({ theme, showChinese }) => {
                       ({section.domainZh})
                     </Typography>
                   )}
+                  <div
+                    onClick={(e) => {
+                      handleClick(section.link);
+                      e.stopPropagation(); // 阻止 Accordion 的展開/收起行為
+                    }}
+                    className="w-6 h-6 leading-6 text-center ml-0.5 pt-2.5 inline-block cursor-pointer"
+                  >
+                    <SquareArrowOutUpRight
+                      size={18}
+                      color={theme.palette.primary.main}
+                    />
+                  </div>
                 </Typography>
                 <Chip
                   label={`Weight ${section.weight}`}

@@ -40,8 +40,8 @@ type Props = {
 const Exam: React.FC<Props> = ({ showChinese }) => {
   const theme = useTheme();
   // --- 測驗設定狀態 ---
-  const [questionCount, setQuestionCount] = useState<number>(10);
-  const [timeLimit, setTimeLimit] = useState<number>(0); // 0 代表不限時 (分鐘)
+  const [questionCount, setQuestionCount] = useState<number>(65);
+  const [timeLimit, setTimeLimit] = useState<number>(90); // 0 代表不限時 (分鐘)
   const [activeQuizData, setActiveQuizData] = useState<QuizQuestion[]>([]);
 
   // --- 測驗進行狀態 ---
@@ -310,17 +310,20 @@ const Exam: React.FC<Props> = ({ showChinese }) => {
                   <MenuItem value={0}>
                     No Time Limit {showChinese && "(不限時)"}
                   </MenuItem>
-                  <MenuItem value={3}>
-                    3 Minutes {showChinese && "(3 分鐘)"}
-                  </MenuItem>
-                  <MenuItem value={5}>
-                    5 Minutes {showChinese && "(5 分鐘)"}
-                  </MenuItem>
                   <MenuItem value={10}>
                     10 Minutes {showChinese && "(10 分鐘)"}
                   </MenuItem>
-                  <MenuItem value={15}>
-                    15 Minutes {showChinese && "(15 分鐘)"}
+                  <MenuItem value={20}>
+                    20 Minutes {showChinese && "(20 分鐘)"}
+                  </MenuItem>
+                  <MenuItem value={30}>
+                    30 Minutes {showChinese && "(30 分鐘)"}
+                  </MenuItem>
+                  <MenuItem value={60}>
+                    60 Minutes {showChinese && "(60 分鐘)"}
+                  </MenuItem>
+                  <MenuItem value={90}>
+                    90 Minutes {showChinese && "(90 分鐘)"}
                   </MenuItem>
                 </Select>
               </FormControl>

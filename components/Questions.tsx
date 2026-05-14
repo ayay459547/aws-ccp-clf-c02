@@ -116,6 +116,8 @@ const Questions: React.FC<Props> = ({ showChinese }) => {
                 borderRadius: 3,
                 border: "1px solid",
                 borderColor: "grey.200",
+                maxHeight: 160,
+                overflowY: "auto",
               }}
             >
               {filteredQuestions.map((_, idx) => (

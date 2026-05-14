@@ -1,0 +1,961 @@
+[
+  {
+    "qEn": "A company is using EC2 Instances to run their e-commerce site on the AWS platform. If the site becomes unavailable, the company will lose a significant amount of money for each minute the site is unavailable. Which design principle should the company use to minimize the risk of an outage?",
+    "qZh": "一家公司使用 EC2 執行個體在 AWS 平台上執行其電子商務網站。如果該網站無法使用，公司每中斷一分鐘就會損失大量金錢。公司應使用哪種設計原則來將中斷的風險降至最低？",
+    "optionsEn": [
+      "Least Privilege.",
+      "Pilot Light.",
+      "Fault Tolerance.",
+      "Multi-threading."
+    ],
+    "optionsZh": [
+      "最小權限 (Least Privilege)。",
+      "指示燈 (Pilot Light)。",
+      "容錯 (Fault Tolerance)。",
+      "多執行緒 (Multi-threading)。"
+    ],
+    "answers": [2],
+    "expEn": "Fault tolerance is the property that enables a system to continue operating properly in the event of the failure of some (or one or more) of its components, thereby minimizing the risk of an outage.",
+    "expZh": "容錯是一種特性，使系統在某些（或一個或多個）組件發生故障時仍能繼續正常運作，從而將中斷風險降至最低。"
+  },
+  {
+    "qEn": "You decide to buy a reserved instance for a term of one year. Which option provides the largest total discount?",
+    "qZh": "您決定購買為期一年的預留執行個體。哪個選項提供最大的總折扣？",
+    "optionsEn": [
+      "All up-front reservation.",
+      "All reserved instance payment options provide the same discount level.",
+      "Partial up-front reservation.",
+      "No up-front reservation."
+    ],
+    "optionsZh": [
+      "全額預付預留 (All up-front reservation)。",
+      "所有預留執行個體付款選項都提供相同的折扣等級。",
+      "部分預付預留 (Partial up-front reservation)。",
+      "無預付預留 (No up-front reservation)。"
+    ],
+    "answers": [0],
+    "expEn": "The 'All Upfront' payment option requires you to pay for the entire Reserved Instance term with one upfront payment, and it provides the largest discount compared to Partial or No Upfront.",
+    "expZh": "「全額預付」付款選項要求您以一次性預付款支付整個預留執行個體期間的費用，並且與部分預付或無預付相比，它提供了最大的折扣。"
+  },
+  {
+    "qEn": "What features does AWS offer to help protect your data in the Cloud? (Choose TWO)",
+    "qZh": "AWS 提供哪些功能來幫助保護您在雲端中的資料？（選擇兩個）",
+    "optionsEn": [
+      "Access control.",
+      "Physical MFA devices.",
+      "Data encryption.",
+      "Unlimited storage.",
+      "Load balancing."
+    ],
+    "optionsZh": [
+      "存取控制 (Access control)。",
+      "實體 MFA 裝置。",
+      "資料加密 (Data encryption)。",
+      "無限儲存。",
+      "負載平衡。"
+    ],
+    "answers": [0, 2],
+    "expEn": "AWS provides robust access control (via IAM) to restrict who can access your data, and data encryption (at rest and in transit) to ensure data is unreadable if intercepted or accessed without authorization.",
+    "expZh": "AWS 提供強大的存取控制（透過 IAM）來限制誰可以存取您的資料，並提供資料加密（靜態和傳輸中）以確保資料在被攔截或未經授權存取時無法被讀取。"
+  },
+  {
+    "qEn": "An AWS customer has used one Amazon Linux instance for 2 hours, 5 minutes and 9 seconds, and one CentOS instance for 4 hours, 23 minutes and 7 seconds. How much time will the customer be billed for?",
+    "qZh": "一位 AWS 客戶使用了一個 Amazon Linux 執行個體 2 小時 5 分 9 秒，以及一個 CentOS 執行個體 4 小時 23 分 7 秒。客戶將被收取多少時間的費用？",
+    "optionsEn": [
+      "3 hours for the Linux instance and 5 hours for the CentOS instance.",
+      "2 hours, 5 minutes and 9 seconds for the Linux instance and 4 hours, 23 minutes and 7 seconds for the CentOS instance.",
+      "2 hours, 5 minutes and 9 seconds for the Linux instance and 5 hours for the CentOS instance.",
+      "3 hours for the Linux instance and 4 hours, 23 minutes and 7 seconds for the CentOS instance."
+    ],
+    "optionsZh": [
+      "Linux 執行個體 3 小時，CentOS 執行個體 5 小時。",
+      "Linux 執行個體 2 小時 5 分 9 秒，CentOS 執行個體 4 小時 23 分 7 秒。",
+      "Linux 執行個體 2 小時 5 分 9 秒，CentOS 執行個體 5 小時。",
+      "Linux 執行個體 3 小時，CentOS 執行個體 4 小時 23 分 7 秒。"
+    ],
+    "answers": [2],
+    "expEn": "Amazon EC2 instances (like Amazon Linux and Ubuntu) are billed per second (with a 1-minute minimum). Other instances (like CentOS or older Windows) are billed by the full hour. Thus, Linux is billed for exact time, and CentOS is rounded up to 5 hours.",
+    "expZh": "Amazon EC2 執行個體（例如 Amazon Linux 和 Ubuntu）按秒計費（最少 1 分鐘）。其他執行個體（例如 CentOS 或較舊的 Windows）按整小時計算。因此，Linux 按精確時間計費，而 CentOS 會向上進位至 5 小時。"
+  },
+  {
+    "qEn": "What is the AWS Support feature that allows customers to manage support cases programmatically?",
+    "qZh": "哪項 AWS 支援 (Support) 功能允許客戶以程式化方式管理支援案例？",
+    "optionsEn": [
+      "AWS Trusted Advisor.",
+      "AWS Operations Support.",
+      "AWS Support API.",
+      "AWS Personal Health Dashboard."
+    ],
+    "optionsZh": [
+      "AWS Trusted Advisor。",
+      "AWS 維運支援 (Operations Support)。",
+      "AWS Support API。",
+      "AWS 個人健康儀表板 (Personal Health Dashboard)。"
+    ],
+    "answers": [2],
+    "expEn": "The AWS Support API provides programmatic access to AWS Support Center features to create, manage, and resolve support cases, and to access AWS Trusted Advisor checks.",
+    "expZh": "AWS Support API 提供對 AWS 支援中心功能的程式化存取，以建立、管理和解決支援案例，並存取 AWS Trusted Advisor 檢查。"
+  },
+  {
+    "qEn": "Which methods can be used by customers to interact with AWS Identity and Access Management (IAM)? (Choose TWO)",
+    "qZh": "客戶可以使用哪些方法與 AWS Identity and Access Management (IAM) 互動？（選擇兩個）",
+    "optionsEn": [
+      "AWS CLI.",
+      "AWS Security Groups.",
+      "AWS SDKs.",
+      "AWS Network Access Control Lists.",
+      "AWS CodeCommit."
+    ],
+    "optionsZh": [
+      "AWS CLI。",
+      "AWS 安全群組 (Security Groups)。",
+      "AWS SDKs。",
+      "AWS 網路存取控制清單 (NACLs)。",
+      "AWS CodeCommit。"
+    ],
+    "answers": [0, 2],
+    "expEn": "You can interact with IAM (and most AWS services) using the AWS Management Console, the AWS Command Line Interface (CLI), AWS SDKs, and the IAM HTTPS API.",
+    "expZh": "您可以使用 AWS 管理控制台、AWS 命令列介面 (CLI)、AWS SDK 和 IAM HTTPS API 與 IAM（以及大多數 AWS 服務）互動。"
+  },
+  {
+    "qEn": "Which of the following are types of AWS Identity and Access Management (IAM) identities? (Choose TWO)",
+    "qZh": "下列哪些是 AWS Identity and Access Management (IAM) 身分 (identities) 的類型？（選擇兩個）",
+    "optionsEn": [
+      "AWS Resource Groups.",
+      "IAM Policies.",
+      "IAM Roles.",
+      "IAM Users.",
+      "AWS Organizations."
+    ],
+    "optionsZh": [
+      "AWS 資源群組 (Resource Groups)。",
+      "IAM 政策 (Policies)。",
+      "IAM 角色 (Roles)。",
+      "IAM 使用者 (Users)。",
+      "AWS Organizations。"
+    ],
+    "answers": [2, 3],
+    "expEn": "IAM identities are the users, groups, and roles that are created to provide authentication for people and processes in your AWS account.",
+    "expZh": "IAM 身分是指建立用於為 AWS 帳戶中的人員和程序提供身分驗證的使用者、群組和角色。"
+  },
+  {
+    "qEn": "Which of the following Amazon RDS features facilitates offloading of database read activity?",
+    "qZh": "下列哪項 Amazon RDS 功能有助於卸載資料庫的讀取活動？",
+    "optionsEn": [
+      "Database Snapshots.",
+      "Multi-AZ Deployments.",
+      "Automated Backups.",
+      "Read Replicas."
+    ],
+    "optionsZh": [
+      "資料庫快照 (Database Snapshots)。",
+      "多可用區域部署 (Multi-AZ Deployments)。",
+      "自動備份。",
+      "唯讀複本 (Read Replicas)。"
+    ],
+    "answers": [3],
+    "expEn": "Read Replicas allow you to offload read traffic from your primary database instance, enhancing performance for read-heavy workloads.",
+    "expZh": "唯讀複本允許您從主資料庫執行個體卸載讀取流量，從而提升讀取繁重工作負載的效能。"
+  },
+  {
+    "qEn": "How does AWS notify customers about security and privacy events pertaining to AWS services?",
+    "qZh": "AWS 如何將有關 AWS 服務的安全和隱私事件通知客戶？",
+    "optionsEn": [
+      "Using the AWS ACM service.",
+      "Using Security Bulletins.",
+      "Using the AWS Management Console.",
+      "Using Compliance Resources."
+    ],
+    "optionsZh": [
+      "使用 AWS ACM 服務。",
+      "使用安全公告 (Security Bulletins)。",
+      "使用 AWS 管理控制台。",
+      "使用合規性資源 (Compliance Resources)。"
+    ],
+    "answers": [1],
+    "expEn": "AWS publishes Security Bulletins to notify customers about important security and privacy events that may affect AWS services.",
+    "expZh": "AWS 發布安全公告 (Security Bulletins)，以通知客戶可能影響 AWS 服務的重要安全和隱私事件。"
+  },
+  {
+    "qEn": "Which IAM entity can best be used to grant temporary access to your AWS resources?",
+    "qZh": "哪個 IAM 實體最適合用於授予對您的 AWS 資源的臨時存取權限？",
+    "optionsEn": ["IAM Users.", "Key Pair.", "IAM Roles.", "IAM Groups."],
+    "optionsZh": [
+      "IAM 使用者。",
+      "金鑰對 (Key Pair)。",
+      "IAM 角色 (Roles)。",
+      "IAM 群組。"
+    ],
+    "answers": [2],
+    "expEn": "An IAM role is similar to an IAM user, but it does not have long-term credentials. Instead, assuming a role provides you with temporary security credentials.",
+    "expZh": "IAM 角色類似於 IAM 使用者，但它沒有長期憑證。相反，代入 (assuming) 角色會為您提供臨時的安全憑證。"
+  },
+  {
+    "qEn": "A company has a web application that is hosted on a single EC2 instance and is approaching 100 percent CPU Utilization during peak loads. Rather than scaling the server vertically, the company has decided to deploy three Amazon EC2 instances in parallel and to distribute traffic across the three servers. What AWS Service should the company use to distribute the traffic evenly?",
+    "qZh": "一家公司有一個託管在單個 EC2 執行個體上的網頁應用程式，在尖峰負載期間 CPU 使用率接近 100%。該公司決定不對伺服器進行垂直擴展，而是平行部署三個 Amazon EC2 執行個體，並將流量分配到這三台伺服器上。公司應使用哪項 AWS 服務來均勻分配流量？",
+    "optionsEn": [
+      "AWS Global Accelerator.",
+      "AWS Application Load Balancer (ALB).",
+      "Amazon CloudFront.",
+      "Transit VPC."
+    ],
+    "optionsZh": [
+      "AWS Global Accelerator。",
+      "AWS 應用程式負載平衡器 (ALB)。",
+      "Amazon CloudFront。",
+      "Transit VPC。"
+    ],
+    "answers": [1],
+    "expEn": "The Application Load Balancer (ALB) automatically distributes incoming application traffic across multiple targets, such as Amazon EC2 instances, in multiple Availability Zones.",
+    "expZh": "應用程式負載平衡器 (ALB) 會自動將傳入的應用程式流量分配到多個目標，例如分佈在多個可用區域中的 Amazon EC2 執行個體。"
+  },
+  {
+    "qEn": "Which of the following approaches will help you eliminate human error and automate the process of creating and updating your AWS environment?",
+    "qZh": "下列哪種方法將幫助您消除人為錯誤並自動化建立和更新 AWS 環境的過程？",
+    "optionsEn": [
+      "Use Software test automation tools.",
+      "Use AWS CodeDeploy to build and automate your AWS environment.",
+      "Use code to provision and operate your AWS infrastructure.",
+      "Migrate all of your applications to a dedicated host."
+    ],
+    "optionsZh": [
+      "使用軟體測試自動化工具。",
+      "使用 AWS CodeDeploy 建置並自動化您的 AWS 環境。",
+      "使用程式碼來配置和操作您的 AWS 基礎架構 (Infrastructure as Code)。",
+      "將您所有的應用程式遷移到專用主機。"
+    ],
+    "answers": [2],
+    "expEn": "Infrastructure as Code (using tools like AWS CloudFormation) allows you to define your AWS environment in templates, eliminating manual setup errors and enabling automation.",
+    "expZh": "基礎架構即程式碼（使用 AWS CloudFormation 等工具）允許您在範本中定義 AWS 環境，從而消除手動設定的錯誤並實現自動化。"
+  },
+  {
+    "qEn": "A company is seeking to better secure its AWS account from unauthorized access. Which of the below options can the customer use to achieve this goal?",
+    "qZh": "一家公司尋求更好地保護其 AWS 帳戶免受未經授權的存取。客戶可以使用下列哪一個選項來達成此目標？",
+    "optionsEn": [
+      "Restrict any API call made through SDKs or CLI.",
+      "Create one IAM account for each department in the company (Development, QA, Production), and share it across all staff in that department.",
+      "Require Multi-Factor Authentication (MFA) for all IAM User access.",
+      "Set up two login passwords."
+    ],
+    "optionsZh": [
+      "限制透過 SDK 或 CLI 進行的任何 API 呼叫。",
+      "為公司每個部門（開發、QA、生產）建立一個 IAM 帳戶，並與該部門所有員工共享。",
+      "要求所有 IAM 使用者存取時都必須使用多重要素身分驗證 (MFA)。",
+      "設定兩個登入密碼。"
+    ],
+    "answers": [2],
+    "expEn": "Enforcing Multi-Factor Authentication (MFA) is one of the most effective AWS security best practices to protect accounts from unauthorized access, even if a password is compromised.",
+    "expZh": "強制執行多重要素身分驗證 (MFA) 是保護帳戶免受未經授權存取的最有效 AWS 安全最佳實踐之一，即使密碼外洩也能提供保護。"
+  },
+  {
+    "qEn": "Which AWS Service offers volume discounts based on usage?",
+    "qZh": "哪項 AWS 服務會根據用量提供數量折扣 (volume discounts)？",
+    "optionsEn": [
+      "Amazon VPC.",
+      "Amazon S3.",
+      "Amazon Lightsail.",
+      "AWS Cost Explorer."
+    ],
+    "optionsZh": [
+      "Amazon VPC。",
+      "Amazon S3。",
+      "Amazon Lightsail。",
+      "AWS Cost Explorer。"
+    ],
+    "answers": [1],
+    "expEn": "Amazon S3 pricing has volume tiers; as you store more data, the price per GB decreases.",
+    "expZh": "Amazon S3 的定價設有數量級距；隨著您儲存的資料越多，每 GB 的價格就會降低。"
+  },
+  {
+    "qEn": "Which of the following factors should be considered when determining the region in which AWS Resources will be deployed? (Choose TWO)",
+    "qZh": "在決定部署 AWS 資源的區域時，應考慮下列哪些因素？（選擇兩個）",
+    "optionsEn": [
+      "The AWS Region’s security level.",
+      "Data sovereignty.",
+      "Cost.",
+      "The planned number of VPCs.",
+      "Geographic proximity to the company's location."
+    ],
+    "optionsZh": [
+      "AWS 區域的安全等級。",
+      "資料主權 (Data sovereignty)。",
+      "成本 (Cost)。",
+      "計畫的 VPC 數量。",
+      "與公司位置的地理鄰近性。"
+    ],
+    "answers": [1, 2],
+    "expEn": "When choosing an AWS Region, you should consider Data Sovereignty (legal requirements for data to remain in a specific country) and Cost (pricing varies by Region).",
+    "expZh": "選擇 AWS 區域時，您應該考慮資料主權（資料必須保留在特定國家/地區的法律要求）和成本（定價因區域而異）。"
+  },
+  {
+    "qEn": "You are running a financial services web application on AWS. The application uses a MySQL database to store the data. Which of the following AWS services would improve the performance of your application by allowing you to retrieve information from fast in-memory caches?",
+    "qZh": "您在 AWS 上執行一個金融服務 Web 應用程式。該應用程式使用 MySQL 資料庫來儲存資料。下列哪項 AWS 服務可以讓您從快速的記憶體內快取擷取資訊，從而提高應用程式的效能？",
+    "optionsEn": [
+      "Amazon EFS.",
+      "Amazon Neptune.",
+      "Amazon ElastiCache.",
+      "DAX."
+    ],
+    "optionsZh": [
+      "Amazon EFS。",
+      "Amazon Neptune。",
+      "Amazon ElastiCache。",
+      "DAX (DynamoDB Accelerator)。"
+    ],
+    "answers": [2],
+    "expEn": "Amazon ElastiCache is a fully managed in-memory caching service (supporting Redis and Memcached) that speeds up applications by caching frequently accessed data from databases like MySQL.",
+    "expZh": "Amazon ElastiCache 是一種全託管的記憶體內快取服務（支援 Redis 和 Memcached），透過快取來自 MySQL 等資料庫的常用資料來加速應用程式。"
+  },
+  {
+    "qEn": "What are the advantages of using Auto Scaling Groups for EC2 instances?",
+    "qZh": "針對 EC2 執行個體使用 Auto Scaling 群組的優點是什麼？",
+    "optionsEn": [
+      "Auto Scaling Groups caches the most recent responses at global edge locations to reduce latency and improve performance.",
+      "Auto Scaling Groups scales EC2 instances in multiple Availability Zones to increase application availability and fault tolerance.",
+      "Auto Scaling Groups scales EC2 instances across multiple regions to reduce latency for global users.",
+      "Auto Scaling Groups distributes application traffic across multiple Availability Zones to enhance performance."
+    ],
+    "optionsZh": [
+      "Auto Scaling 群組在全球邊緣站點快取最新回應，以降低延遲並提升效能。",
+      "Auto Scaling 群組在多個可用區域中擴展 EC2 執行個體，以提高應用程式可用性和容錯能力。",
+      "Auto Scaling 群組跨多個區域擴展 EC2 執行個體，以降低全球使用者的延遲。",
+      "Auto Scaling 群組將應用程式流量分配到多個可用區域，以增強效能。"
+    ],
+    "answers": [1],
+    "expEn": "Auto Scaling Groups can launch instances across multiple Availability Zones within a region, ensuring that if one AZ goes down, the application remains highly available and fault-tolerant.",
+    "expZh": "Auto Scaling 群組可以在一個區域內的多個可用區域中啟動執行個體，確保如果一個 AZ 發生故障，應用程式仍保持高可用性和容錯能力。"
+  },
+  {
+    "qEn": "The TCO gap between AWS infrastructure and traditional infrastructure has widened over the recent years. Which of the following could be the reason for that?",
+    "qZh": "近年來，AWS 基礎架構與傳統基礎架構之間的 TCO（總體擁有成本）差距擴大了。下列哪一項可能是原因？",
+    "optionsEn": [
+      "AWS helps customers invest more in capital expenditures.",
+      "AWS automates all infrastructure operations, so customers save more on human resources costs.",
+      "AWS continues to lower the cost of cloud computing for its customers.",
+      "AWS secures AWS resources at no additional charge."
+    ],
+    "optionsZh": [
+      "AWS 幫助客戶在資本支出方面投資更多。",
+      "AWS 自動化了所有基礎架構營運，因此客戶在人力資源成本上節省更多。",
+      "AWS 持續為其客戶降低雲端運算的成本。",
+      "AWS 免費保護 AWS 資源的安全。"
+    ],
+    "answers": [2],
+    "expEn": "AWS operates on massive economies of scale and frequently passes those savings back to customers in the form of price reductions, widening the cost-benefit gap compared to traditional IT.",
+    "expZh": "AWS 以巨大的規模經濟運作，並經常以降低價格的形式將這些節省的成本回饋給客戶，從而擴大了與傳統 IT 相比的成本效益差距。"
+  },
+  {
+    "qEn": "Which of the following are examples of the customer’s responsibility to implement “security IN the cloud”? (Choose TWO)",
+    "qZh": "下列哪些是客戶負責實施「雲端內部安全 (security IN the cloud)」的範例？（選擇兩個）",
+    "optionsEn": [
+      "Building a schema for an application.",
+      "Replacing physical hardware.",
+      "Creating a new hypervisor.",
+      "Patch management of the underlying infrastructure.",
+      "File system encryption."
+    ],
+    "optionsZh": [
+      "為應用程式建立結構描述 (schema)。",
+      "更換實體硬體。",
+      "建立新的虛擬機監視器 (hypervisor)。",
+      "底層基礎架構的修補程式管理。",
+      "檔案系統加密。"
+    ],
+    "answers": [0, 4],
+    "expEn": "In the Shared Responsibility Model, the customer is responsible for data management (like database schemas) and encrypting data (like file system encryption).",
+    "expZh": "在責任共擔模型中，客戶負責資料管理（例如資料庫結構描述）和加密資料（例如檔案系統加密）。"
+  },
+  {
+    "qEn": "Which of the following is a type of MFA device that customers can use to protect their AWS resources?",
+    "qZh": "客戶可以使用下列哪種 MFA 裝置來保護其 AWS 資源？",
+    "optionsEn": [
+      "AWS CloudHSM.",
+      "U2F Security Key.",
+      "AWS Access Keys.",
+      "AWS Key Pair."
+    ],
+    "optionsZh": [
+      "AWS CloudHSM。",
+      "U2F 安全金鑰 (Security Key)。",
+      "AWS 存取金鑰 (Access Keys)。",
+      "AWS 金鑰對 (Key Pair)。"
+    ],
+    "answers": [1],
+    "expEn": "AWS supports Universal 2nd Factor (U2F) security keys, which are physical hardware devices that plug into a USB port to provide multi-factor authentication.",
+    "expZh": "AWS 支援通用第二因素 (U2F) 安全金鑰，這是插入 USB 埠以提供多重要素身分驗證的實體硬體裝置。"
+  },
+  {
+    "qEn": "A company is seeking to deploy an existing .NET application onto AWS as quickly as possible. Which AWS Service should the customer use to achieve this goal?",
+    "qZh": "一家公司尋求盡快將現有的 .NET 應用程式部署到 AWS 上。客戶應該使用哪項 AWS 服務來達成此目標？",
+    "optionsEn": [
+      "Amazon SNS.",
+      "AWS Elastic Beanstalk.",
+      "AWS Systems Manager.",
+      "AWS Trusted Advisor."
+    ],
+    "optionsZh": [
+      "Amazon SNS。",
+      "AWS Elastic Beanstalk。",
+      "AWS Systems Manager。",
+      "AWS Trusted Advisor。"
+    ],
+    "answers": [1],
+    "expEn": "AWS Elastic Beanstalk is an easy-to-use service for deploying and scaling web applications developed with Java, .NET, PHP, Node.js, Python, Ruby, Go, and Docker.",
+    "expZh": "AWS Elastic Beanstalk 是一項易於使用的服務，用於部署和擴展使用 Java、.NET、PHP、Node.js、Python、Ruby、Go 和 Docker 開發的 Web 應用程式。"
+  },
+  {
+    "qEn": "Which of the following is NOT a factor when estimating the costs of Amazon EC2? (Choose TWO)",
+    "qZh": "在估算 Amazon EC2 的成本時，下列哪一項「不」是考量因素？（選擇兩個）",
+    "optionsEn": [
+      "The amount of time the instances will be running.",
+      "Number of security groups.",
+      "Allocated Elastic IP Addresses.",
+      "Number of Hosted Zones.",
+      "Number of instances."
+    ],
+    "optionsZh": [
+      "執行個體將執行的時間長度。",
+      "安全群組的數量。",
+      "配置的彈性 IP 地址 (Elastic IP)。",
+      "託管區域 (Hosted Zones) 的數量。",
+      "執行個體的數量。"
+    ],
+    "answers": [1, 3],
+    "expEn": "Security Groups are free of charge. Hosted Zones are a feature of Amazon Route 53, not a factor in estimating Amazon EC2 costs.",
+    "expZh": "安全群組是免費的。託管區域是 Amazon Route 53 的功能，不是估算 Amazon EC2 成本的因素。"
+  },
+  {
+    "qEn": "Which AWS Service helps enterprises extend their on-premises storage to AWS in a cost-effective manner?",
+    "qZh": "哪項 AWS 服務幫助企業以具成本效益的方式，將其本地端儲存擴展到 AWS？",
+    "optionsEn": [
+      "AWS Data Pipeline.",
+      "AWS Storage Gateway.",
+      "Amazon Aurora.",
+      "Amazon EFS."
+    ],
+    "optionsZh": [
+      "AWS Data Pipeline。",
+      "AWS Storage Gateway。",
+      "Amazon Aurora。",
+      "Amazon EFS。"
+    ],
+    "answers": [1],
+    "expEn": "AWS Storage Gateway is a hybrid cloud storage service that gives you on-premises access to virtually unlimited cloud storage in AWS.",
+    "expZh": "AWS Storage Gateway 是一種混合雲儲存服務，讓您能在本地端存取 AWS 中幾乎無限的雲端儲存空間。"
+  },
+  {
+    "qEn": "A company is building an online cloud storage platform. They need a storage service that can scale capacity automatically, while minimizing cost. Which AWS storage service should the company use to meet these requirements?",
+    "qZh": "一家公司正在建構一個線上雲端儲存平台。他們需要一種能自動擴展容量同時將成本降至最低的儲存服務。該公司應使用哪項 AWS 儲存服務來滿足這些需求？",
+    "optionsEn": [
+      "Amazon Simple Storage Service.",
+      "Amazon Elastic Block Store.",
+      "Amazon Elastic Container Service.",
+      "AWS Storage Gateway."
+    ],
+    "optionsZh": [
+      "Amazon Simple Storage Service (S3)。",
+      "Amazon Elastic Block Store (EBS)。",
+      "Amazon Elastic Container Service (ECS)。",
+      "AWS Storage Gateway。"
+    ],
+    "answers": [0],
+    "expEn": "Amazon S3 provides virtually unlimited, automatic scaling of object storage at a very low cost, making it ideal for a cloud storage platform backend.",
+    "expZh": "Amazon S3 以極低的成本提供幾乎無限、自動擴展的物件儲存，使其成為雲端儲存平台後端的理想選擇。"
+  },
+  {
+    "qEn": "You have just hired a skilled sys-admin to join your team. As usual, you have created a new IAM user for him to interact with AWS services. On his first day, you ask him to create snapshots of all existing Amazon EBS volumes and save them in a new Amazon S3 bucket. However, the new member reports back that he is unable to create neither EBS snapshots nor S3 buckets. What might prevent him from doing this simple task?",
+    "qZh": "您剛聘請了一位熟練的系統管理員加入您的團隊。像往常一樣，您為他建立了一個新的 IAM 使用者來與 AWS 服務互動。在他上班的第一天，您要求他為所有現有的 Amazon EBS 磁碟區建立快照，並將其儲存在一個新的 Amazon S3 儲存貯體中。然而，這位新成員回報說他既無法建立 EBS 快照也無法建立 S3 儲存貯體。是什麼原因阻止他完成這項簡單的任務？",
+    "optionsEn": [
+      "EBS and S3 are accessible only to the root account owner.",
+      "The systems administrator must contact AWS Support first to activate his new IAM account.",
+      "There is not enough space in S3 to store the snapshots.",
+      "There is a non-explicit deny to all new users."
+    ],
+    "optionsZh": [
+      "EBS 和 S3 只能由根帳戶擁有者存取。",
+      "系統管理員必須先聯絡 AWS 支援以啟用他的新 IAM 帳戶。",
+      "S3 中沒有足夠的空間來儲存快照。",
+      "對所有新使用者存在非明確的拒絕 (non-explicit deny / default deny)。"
+    ],
+    "answers": [3],
+    "expEn": "By default, new IAM users are created with no permissions (a default or implicit deny). They cannot do anything until you explicitly grant them permissions via IAM policies.",
+    "expZh": "預設情況下，新建立的 IAM 使用者沒有任何權限（預設或隱含拒絕）。除非您透過 IAM 政策明確授予他們權限，否則他們無法執行任何操作。"
+  },
+  {
+    "qEn": "An external auditor is requesting a log of all accesses to the AWS resources in the company’s account. Which of the following services will provide the auditor with the requested information?",
+    "qZh": "一位外部稽核員要求提供存取公司帳戶中 AWS 資源的所有日誌。下列哪項服務將為稽核員提供所要求的資訊？",
+    "optionsEn": [
+      "AWS CloudTrail.",
+      "Amazon CloudFront.",
+      "AWS CloudFormation.",
+      "Amazon CloudWatch."
+    ],
+    "optionsZh": [
+      "AWS CloudTrail。",
+      "Amazon CloudFront。",
+      "AWS CloudFormation。",
+      "Amazon CloudWatch。"
+    ],
+    "answers": [0],
+    "expEn": "AWS CloudTrail provides an event history of your AWS account activity, including API calls made through the AWS Management Console, AWS SDKs, and command line tools, which is essential for auditing.",
+    "expZh": "AWS CloudTrail 提供您 AWS 帳戶活動的事件歷史記錄，包括透過 AWS 管理控制台、AWS SDK 和命令列工具進行的 API 呼叫，這對於稽核至關重要。"
+  },
+  {
+    "qEn": "Which of the below options is true of Amazon Cloud Directory?",
+    "qZh": "關於 Amazon Cloud Directory，下列哪個選項是正確的？",
+    "optionsEn": [
+      "Amazon Cloud Directory allows the organization of hierarchies of data across multiple dimensions.",
+      "Amazon Cloud Directory enables the analysis of video and data streams in real time.",
+      "Amazon Cloud Directory allows users to access AWS with their existing Active Directory credentials.",
+      "Amazon Cloud Directory allows for registration and management of domain names."
+    ],
+    "optionsZh": [
+      "Amazon Cloud Directory 允許跨多個維度組織資料的階層結構。",
+      "Amazon Cloud Directory 可以即時分析影片和資料流。",
+      "Amazon Cloud Directory 允許使用者使用現有的 Active Directory 憑證存取 AWS。",
+      "Amazon Cloud Directory 允許註冊和管理網域名稱。"
+    ],
+    "answers": [0],
+    "expEn": "Amazon Cloud Directory enables you to build flexible, cloud-native directories for organizing hierarchies of data along multiple dimensions (unlike traditional directories which are single-hierarchy).",
+    "expZh": "Amazon Cloud Directory 讓您能夠建立靈活的雲端原生目錄，以沿著多個維度組織資料的階層結構（不像傳統目錄是單一階層）。"
+  },
+  {
+    "qEn": "A user has opened a \"Production System Down\" support case to get help from AWS Support after a production system disruption. What is the expected response time for this type of support case?",
+    "qZh": "使用者在生產系統中斷後，開啟了一個「生產系統關閉 (Production System Down)」的支援案例以尋求 AWS 支援的協助。此類支援案例的預期回應時間是多少？",
+    "optionsEn": ["12 hours.", "15 minutes.", "24 hours.", "One hour."],
+    "optionsZh": ["12 小時。", "15 分鐘。", "24 小時。", "1 小時。"],
+    "answers": [3],
+    "expEn": "For a 'Production System Down' case, the targeted response time is less than 1 hour under the Business or Enterprise Support plans.",
+    "expZh": "對於「生產系統關閉」案例，在商業級或企業級支援計畫下，目標回應時間小於 1 小時。"
+  },
+  {
+    "qEn": "Which of the below options is a best practice for making your application on AWS highly available?",
+    "qZh": "下列哪個選項是讓您的 AWS 應用程式具備高可用性的最佳實踐？",
+    "optionsEn": [
+      "Deploy the application to at least two Availability Zones.",
+      "Use Elastic Load Balancing (ELB) across multiple AWS Regions.",
+      "Deploy the application code on at least two servers in the same Availability Zone.",
+      "Rewrite the application code to handle all incoming requests."
+    ],
+    "optionsZh": [
+      "將應用程式部署到至少兩個可用區域 (Availability Zones)。",
+      "跨多個 AWS 區域使用彈性負載平衡 (ELB)。",
+      "將應用程式碼部署到同一個可用區域中的至少兩台伺服器上。",
+      "重寫應用程式碼以處理所有傳入的請求。"
+    ],
+    "answers": [0],
+    "expEn": "Deploying your application across multiple Availability Zones protects it from the failure of a single data center, which is the foundational best practice for High Availability on AWS.",
+    "expZh": "跨多個可用區域部署您的應用程式，可保護其免受單一資料中心故障的影響，這是 AWS 上高可用性的基礎最佳實踐。"
+  },
+  {
+    "qEn": "Which of the following should be taken into account when performing a TCO analysis regarding the costs of running an application on AWS VS on-premises? (Choose TWO)",
+    "qZh": "在執行關於在 AWS 對比 本地端執行應用程式成本的 TCO (總體擁有成本) 分析時，應將下列哪些因素納入考量？（選擇兩個）",
+    "optionsEn": [
+      "Labor and IT costs.",
+      "Cooling and power consumption.",
+      "Amazon EBS computing power.",
+      "Software architecture.",
+      "Software compatibility."
+    ],
+    "optionsZh": [
+      "勞動力和 IT 成本。",
+      "冷卻和電力消耗。",
+      "Amazon EBS 運算能力。",
+      "軟體架構。",
+      "軟體相容性。"
+    ],
+    "answers": [0, 1],
+    "expEn": "When calculating TCO for an on-premises data center vs. AWS, you must factor in the 'hidden' on-premises costs, such as the physical facility's power and cooling, as well as the IT labor required to maintain hardware.",
+    "expZh": "在計算本地資料中心與 AWS 的 TCO 時，您必須將「隱藏」的本地端成本納入考量，例如實體設施的電力和冷卻，以及維護硬體所需的 IT 勞動力。"
+  },
+  {
+    "qEn": "Your company requires a response time of less than 15 minutes from support interactions about their business-critical systems that are hosted on AWS if those systems go down. Which AWS Support Plan should this company use?",
+    "qZh": "貴公司要求，如果託管在 AWS 上的關鍵業務系統當機，必須在不到 15 分鐘內獲得支援互動的回應。該公司應該使用哪個 AWS 支援計畫？",
+    "optionsEn": [
+      "AWS Basic Support.",
+      "AWS Developer Support.",
+      "AWS Business Support.",
+      "AWS Enterprise Support."
+    ],
+    "optionsZh": [
+      "AWS 基本支援。",
+      "AWS 開發人員支援。",
+      "AWS 商業級支援。",
+      "AWS 企業級支援。"
+    ],
+    "answers": [3],
+    "expEn": "Only the AWS Enterprise Support plan offers a response time of less than 15 minutes for business-critical system down cases.",
+    "expZh": "只有 AWS 企業級支援計畫針對關鍵業務系統當機案例提供小於 15 分鐘的回應時間。"
+  },
+  {
+    "qEn": "Which of the following AWS offerings are serverless services? (Choose TWO)",
+    "qZh": "下列哪些 AWS 產品是無伺服器 (serverless) 服務？（選擇兩個）",
+    "optionsEn": [
+      "Amazon EC2.",
+      "AWS Lambda.",
+      "Amazon DynamoDB.",
+      "Amazon EMR.",
+      "Amazon RDS."
+    ],
+    "optionsZh": [
+      "Amazon EC2。",
+      "AWS Lambda。",
+      "Amazon DynamoDB。",
+      "Amazon EMR。",
+      "Amazon RDS。"
+    ],
+    "answers": [1, 2],
+    "expEn": "AWS Lambda (serverless compute) and Amazon DynamoDB (serverless NoSQL database) automatically scale and manage infrastructure for you, meaning there are no servers for you to provision or patch.",
+    "expZh": "AWS Lambda（無伺服器運算）和 Amazon DynamoDB（無伺服器 NoSQL 資料庫）為您自動擴展並管理基礎架構，這意味著您不需要配置或修補任何伺服器。"
+  },
+  {
+    "qEn": "Which AWS service enables you to quickly purchase and deploy SSL/TLS certificates?",
+    "qZh": "哪項 AWS 服務使您能夠快速購買和部署 SSL/TLS 憑證？",
+    "optionsEn": [
+      "Amazon GuardDuty.",
+      "AWS ACM.",
+      "Amazon Detective.",
+      "AWS WAF."
+    ],
+    "optionsZh": [
+      "Amazon GuardDuty。",
+      "AWS ACM (AWS Certificate Manager)。",
+      "Amazon Detective。",
+      "AWS WAF。"
+    ],
+    "answers": [1],
+    "expEn": "AWS Certificate Manager (ACM) lets you easily provision, manage, and deploy public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for use with AWS services.",
+    "expZh": "AWS Certificate Manager (ACM) 讓您能輕鬆地佈建、管理和部署公有和私有安全通訊端層/傳輸層安全 (SSL/TLS) 憑證，以搭配 AWS 服務使用。"
+  },
+  {
+    "qEn": "Which AWS Service provides integration with Chef to automate the configuration of EC2 instances?",
+    "qZh": "哪項 AWS 服務提供與 Chef 的整合，以自動化 EC2 執行個體的組態設定？",
+    "optionsEn": [
+      "AWS Config.",
+      "AWS OpsWorks.",
+      "AutoScaling.",
+      "AWS CloudFormation."
+    ],
+    "optionsZh": [
+      "AWS Config。",
+      "AWS OpsWorks。",
+      "AutoScaling。",
+      "AWS CloudFormation。"
+    ],
+    "answers": [1],
+    "expEn": "AWS OpsWorks is a configuration management service that provides managed instances of Chef and Puppet to automate how servers are configured, deployed, and managed.",
+    "expZh": "AWS OpsWorks 是一種組態管理服務，提供受管的 Chef 和 Puppet 執行個體，以自動化伺服器設定、部署和管理的方式。"
+  },
+  {
+    "qEn": "A customer is seeking to store objects in their AWS environment and to make those objects downloadable over the internet. Which AWS Service can be used to accomplish this?",
+    "qZh": "客戶尋求在其 AWS 環境中儲存物件，並使這些物件可透過網際網路下載。哪項 AWS 服務可用於達成此目的？",
+    "optionsEn": [
+      "Amazon EBS.",
+      "Amazon EFS.",
+      "Amazon S3.",
+      "Amazon Instance Store."
+    ],
+    "optionsZh": [
+      "Amazon EBS。",
+      "Amazon EFS。",
+      "Amazon S3。",
+      "Amazon 執行個體存放區。"
+    ],
+    "answers": [2],
+    "expEn": "Amazon S3 is object storage built to store and retrieve any amount of data from anywhere on the Internet.",
+    "expZh": "Amazon S3 是物件儲存，專為從網際網路上的任何地方儲存和檢索任意數量的資料而建立。"
+  },
+  {
+    "qEn": "Which of the following services can be used to monitor the HTTP and HTTPS requests that are forwarded to Amazon CloudFront?",
+    "qZh": "下列哪項服務可用於監控轉發至 Amazon CloudFront 的 HTTP 和 HTTPS 請求？",
+    "optionsEn": [
+      "AWS WAF.",
+      "Amazon CloudWatch.",
+      "AWS Cloud9.",
+      "AWS CloudTrail."
+    ],
+    "optionsZh": [
+      "AWS WAF。",
+      "Amazon CloudWatch。",
+      "AWS Cloud9。",
+      "AWS CloudTrail。"
+    ],
+    "answers": [1],
+    "expEn": "Amazon CloudFront integrates with Amazon CloudWatch metrics so that you can monitor the performance of your distributions and see metrics such as total requests and error rates.",
+    "expZh": "Amazon CloudFront 與 Amazon CloudWatch 指標整合，讓您可以監控分佈 (distributions) 的效能，並查看如總請求數和錯誤率等指標。"
+  },
+  {
+    "qEn": "A company is migrating a web application to AWS. The application’s compute capacity is continually utilized throughout the year. Which of the below options offers the company the most cost-effective solution?",
+    "qZh": "一家公司正在將 Web 應用程式遷移到 AWS。該應用程式的運算容量全年持續被利用。下列哪個選項為公司提供最具成本效益的解決方案？",
+    "optionsEn": [
+      "On-demand Instances.",
+      "Dedicated Hosts.",
+      "Spot Instances.",
+      "Reserved Instances."
+    ],
+    "optionsZh": [
+      "按需執行個體。",
+      "專用主機。",
+      "競價型執行個體。",
+      "預留執行個體 (Reserved Instances)。"
+    ],
+    "answers": [3],
+    "expEn": "For workloads that run continuously (steady-state) over a long period (like a year), Reserved Instances provide the most significant discount compared to On-Demand pricing.",
+    "expZh": "對於長時間（如一年）持續執行（穩定狀態）的工作負載，與按需定價相比，預留執行個體提供最顯著的折扣。"
+  },
+  {
+    "qEn": "A company wants to grant a new employee long-term access to manage Amazon DynamoDB databases. Which of the following is a recommended best-practice when granting these permissions?",
+    "qZh": "一家公司希望授予新員工長期存取權，以管理 Amazon DynamoDB 資料庫。授予這些權限時，下列哪項是建議的最佳實踐？",
+    "optionsEn": [
+      "Create an IAM role and attach a policy with Amazon DynamoDB access permissions.",
+      "Create an IAM role and attach a policy with Administrator access permissions.",
+      "Create an IAM user and attach a policy with Amazon DynamoDB access permissions.",
+      "Create an IAM user and attach a policy with Administrator access permissions."
+    ],
+    "optionsZh": [
+      "建立一個 IAM 角色，並附加具有 Amazon DynamoDB 存取權限的政策。",
+      "建立一個 IAM 角色，並附加具有管理員存取權限的政策。",
+      "建立一個 IAM 使用者，並附加具有 Amazon DynamoDB 存取權限的政策。",
+      "建立一個 IAM 使用者，並附加具有管理員存取權限的政策。"
+    ],
+    "answers": [2],
+    "expEn": "For a person requiring long-term access, you create an IAM User. To follow the principle of least privilege, you attach a policy granting only the permissions they need (DynamoDB access), not full Administrator access.",
+    "expZh": "對於需要長期存取權限的人員，您可以建立一個 IAM 使用者。為了遵循最小權限原則，您附加僅授予其所需權限（DynamoDB 存取權限）的政策，而不是完全的管理員存取權限。"
+  },
+  {
+    "qEn": "When granting permissions to applications running on Amazon EC2 instances, which of the following is considered best practice?",
+    "qZh": "授予在 Amazon EC2 執行個體上執行的應用程式權限時，下列哪項被視為最佳實踐？",
+    "optionsEn": [
+      "Generate new IAM access keys every time you delegate permissions.",
+      "Store the required AWS credentials directly within the application code.",
+      "Use temporary security credentials (IAM roles) instead of long-term access keys.",
+      "Do nothing; Applications that run on Amazon EC2 instances do not need permission to interact with other AWS services or resources."
+    ],
+    "optionsZh": [
+      "每次委派權限時，產生新的 IAM 存取金鑰。",
+      "將所需的 AWS 憑證直接儲存在應用程式碼中。",
+      "使用臨時安全憑證（IAM 角色）代替長期存取金鑰。",
+      "什麼都不做；在 Amazon EC2 執行個體上執行的應用程式不需要權限即可與其他 AWS 服務或資源互動。"
+    ],
+    "answers": [2],
+    "expEn": "Applications running on EC2 should be assigned an IAM Role. This provides temporary, automatically rotated security credentials, eliminating the risk of hard-coding long-term access keys.",
+    "expZh": "在 EC2 上執行的應用程式應被指派一個 IAM 角色。這提供了臨時且自動輪換的安全憑證，消除了在程式碼中硬編碼長期存取金鑰的風險。"
+  },
+  {
+    "qEn": "Which of the following will help AWS customers save on costs when migrating their workloads to AWS?",
+    "qZh": "當 AWS 客戶將其工作負載遷移到 AWS 時，下列哪項有助於他們節省成本？",
+    "optionsEn": [
+      "Use servers instead of managed services.",
+      "Use existing third-party software licenses on AWS.",
+      "Migrate production workloads to AWS edge locations instead of AWS Regions.",
+      "Use AWS Outposts to run all workloads in a cost-optimized environment."
+    ],
+    "optionsZh": [
+      "使用伺服器代替受管服務。",
+      "在 AWS 上使用現有的第三方軟體授權。",
+      "將生產工作負載遷移到 AWS 邊緣站點而不是 AWS 區域。",
+      "使用 AWS Outposts 在成本最佳化的環境中執行所有工作負載。"
+    ],
+    "answers": [1],
+    "expEn": "AWS allows Bring Your Own License (BYOL) for many software products (like Windows Server or Oracle). Reusing existing licenses on AWS Dedicated Hosts or via AWS License Manager saves significant costs compared to buying new cloud licenses.",
+    "expZh": "AWS 允許對許多軟體產品（如 Windows Server 或 Oracle）使用自備授權 (BYOL)。與購買新的雲端授權相比，在 AWS 專用主機上或透過 AWS License Manager 重複使用現有授權可節省大量成本。"
+  },
+  {
+    "qEn": "An organization has a legacy application designed using monolithic-based architecture. Which AWS Service can be used to decouple the components of the application?",
+    "qZh": "一個組織有一個使用基於單體 (monolithic) 架構設計的舊式應用程式。可以使用哪項 AWS 服務來解耦應用程式的組件？",
+    "optionsEn": [
+      "Amazon SQS.",
+      "Virtual Private Gateway.",
+      "AWS Artifact.",
+      "Amazon CloudFront."
+    ],
+    "optionsZh": [
+      "Amazon SQS。",
+      "虛擬私有閘道 (VGW)。",
+      "AWS Artifact。",
+      "Amazon CloudFront。"
+    ],
+    "answers": [0],
+    "expEn": "Amazon Simple Queue Service (SQS) is a message queue that allows you to decouple and scale microservices and distributed systems, moving away from a tightly coupled monolithic architecture.",
+    "expZh": "Amazon Simple Queue Service (SQS) 是一個訊息佇列，允許您解耦和擴展微服務及分散式系統，從而擺脫緊密耦合的單體架構。"
+  },
+  {
+    "qEn": "Which of the following can be used to enable the Virtual Multi-Factor Authentication? (Choose TWO)",
+    "qZh": "下列哪些可用於啟用虛擬多重要素身分驗證 (Virtual Multi-Factor Authentication)？（選擇兩個）",
+    "optionsEn": [
+      "Amazon Connect.",
+      "AWS CLI.",
+      "AWS Identity and Access Management (IAM).",
+      "Amazon SNS.",
+      "Amazon Virtual Private Cloud."
+    ],
+    "optionsZh": [
+      "Amazon Connect。",
+      "AWS CLI。",
+      "AWS Identity and Access Management (IAM)。",
+      "Amazon SNS。",
+      "Amazon 虛擬私有雲 (VPC)。"
+    ],
+    "answers": [1, 2],
+    "expEn": "You can manage and enable MFA devices for IAM users through the AWS Management Console (within IAM) or programmatically via the AWS CLI or API.",
+    "expZh": "您可以透過 AWS 管理控制台（在 IAM 內）或以程式化方式透過 AWS CLI 或 API，為 IAM 使用者管理和啟用 MFA 裝置。"
+  },
+  {
+    "qEn": "According to best practices, which of the below options is best suited for processing a large number of binary files?",
+    "qZh": "根據最佳實踐，下列哪個選項最適合處理大量的二進位檔案？",
+    "optionsEn": [
+      "Vertically scaling EC2 instances.",
+      "Running RDS instances in parallel.",
+      "Vertically scaling RDS instances.",
+      "Running EC2 instances in parallel."
+    ],
+    "optionsZh": [
+      "垂直擴展 EC2 執行個體。",
+      "平行執行 RDS 執行個體。",
+      "垂直擴展 RDS 執行個體。",
+      "平行執行 EC2 執行個體。"
+    ],
+    "answers": [3],
+    "expEn": "Processing files is a compute task. Best practices dictate scaling horizontally (running multiple EC2 instances in parallel) rather than scaling vertically (making one instance bigger), allowing for faster processing and fault tolerance.",
+    "expZh": "處理檔案是一項運算任務。最佳實踐要求水平擴展（平行執行多個 EC2 執行個體），而不是垂直擴展（讓一個執行個體變大），這樣可以實現更快的處理速度和容錯能力。"
+  },
+  {
+    "qEn": "A company is planning to use Amazon S3 and Amazon CloudFront to distribute its video courses globally. What tool can the company use to estimate the costs of these services?",
+    "qZh": "一家公司計畫使用 Amazon S3 和 Amazon CloudFront 來全球發布其影片課程。該公司可以使用什麼工具來估算這些服務的成本？",
+    "optionsEn": [
+      "AWS Cost Explorer.",
+      "AWS Pricing Calculator.",
+      "AWS Budgets.",
+      "AWS Cost & Usage Report."
+    ],
+    "optionsZh": [
+      "AWS Cost Explorer。",
+      "AWS 定價計算機 (Pricing Calculator)。",
+      "AWS Budgets。",
+      "AWS 成本與用量報告。"
+    ],
+    "answers": [1],
+    "expEn": "The AWS Pricing Calculator lets you explore AWS services, and create an estimate for the cost of your use cases on AWS before you deploy them.",
+    "expZh": "AWS 定價計算機讓您探索 AWS 服務，並在部署之前為您在 AWS 上的使用案例建立成本估算。"
+  },
+  {
+    "qEn": "What should you do if you see resources, which you don’t remember creating, in the AWS Management Console? (Choose TWO)",
+    "qZh": "如果您在 AWS 管理控制台中看到您不記得建立過的資源，您應該怎麼做？（選擇兩個）",
+    "optionsEn": [
+      "Stop all running services and open an investigation.",
+      "Give your root account password to AWS Support so that they can assist in troubleshooting and securing the account.",
+      "Check the AWS CloudTrail logs and delete all IAM users that have access to your resources.",
+      "Open an investigation and delete any potentially compromised IAM users.",
+      "Change your AWS root account password and the passwords of any IAM users."
+    ],
+    "optionsZh": [
+      "停止所有正在執行的服務並展開調查。",
+      "將您的根帳戶密碼提供給 AWS 支援，以便他們協助排除故障並保護帳戶安全。",
+      "檢查 AWS CloudTrail 日誌並刪除所有可存取您資源的 IAM 使用者。",
+      "展開調查並刪除任何可能被盜用的 IAM 使用者。",
+      "更改您的 AWS 根帳戶密碼和任何 IAM 使用者的密碼。"
+    ],
+    "answers": [3, 4],
+    "expEn": "If you suspect unauthorized activity, you should immediately change passwords/credentials to secure the account and investigate which users were compromised (and delete them). You should NEVER give your root password to anyone, including AWS.",
+    "expZh": "如果您懷疑有未經授權的活動，您應立即更改密碼/憑證以保護帳戶安全，並調查哪些使用者遭到洩露（並將其刪除）。您絕對不應將您的根密碼提供給任何人，包括 AWS。"
+  },
+  {
+    "qEn": "A key practice when designing solutions on AWS is to minimize dependencies between components so that the failure of a single component does not impact other components. What is this practice called?",
+    "qZh": "在 AWS 上設計解決方案時，一個關鍵實踐是將組件之間的依賴性降至最低，以使單一組件的故障不會影響其他組件。這種實踐被稱為什麼？",
+    "optionsEn": [
+      "Elastic coupling.",
+      "Loosely coupling.",
+      "Scalable coupling.",
+      "Tightly coupling."
+    ],
+    "optionsZh": [
+      "彈性耦合 (Elastic coupling)。",
+      "鬆散耦合 (Loosely coupling)。",
+      "可擴展耦合 (Scalable coupling)。",
+      "緊密耦合 (Tightly coupling)。"
+    ],
+    "answers": [1],
+    "expEn": "Loose coupling ensures that IT systems are independent. If one component fails, it doesn't cause cascading failures in other components.",
+    "expZh": "鬆散耦合確保 IT 系統是獨立的。如果一個組件發生故障，它不會導致其他組件發生連鎖故障。"
+  },
+  {
+    "qEn": "Which AWS Service offers an NFS file system that can be mounted concurrently from multiple EC2 instances?",
+    "qZh": "哪項 AWS 服務提供一個可以從多個 EC2 執行個體同時掛載 (mounted concurrently) 的 NFS 檔案系統？",
+    "optionsEn": [
+      "Amazon Elastic File System.",
+      "Amazon Simple Storage Service.",
+      "Amazon Elastic Block Store.",
+      "AWS Storage Gateway."
+    ],
+    "optionsZh": [
+      "Amazon Elastic File System (EFS)。",
+      "Amazon Simple Storage Service (S3)。",
+      "Amazon Elastic Block Store (EBS)。",
+      "AWS Storage Gateway。"
+    ],
+    "answers": [0],
+    "expEn": "Amazon Elastic File System (Amazon EFS) provides a simple, scalable, fully managed elastic NFS file system for use with AWS Cloud services (EC2) and on-premises resources.",
+    "expZh": "Amazon Elastic File System (Amazon EFS) 提供一個簡單、可擴展且全託管的彈性 NFS 檔案系統，可搭配 AWS 雲端服務 (EC2) 和本地端資源使用。"
+  },
+  {
+    "qEn": "Availability Zones within a Region are connected over low-latency links. Which of the following is a benefit of these links?",
+    "qZh": "一個區域內的可用區域透過低延遲連結連接。下列哪項是這些連結的好處？",
+    "optionsEn": [
+      "Create private connection to your data center.",
+      "Achieve global high availability.",
+      "Automate the process of provisioning new compute resources.",
+      "Make synchronous replication of your data possible."
+    ],
+    "optionsZh": [
+      "建立到您的資料中心的私有連線。",
+      "達成全球高可用性。",
+      "自動化配置新運算資源的過程。",
+      "使資料的同步複製成為可能。"
+    ],
+    "answers": [3],
+    "expEn": "The high-bandwidth, low-latency network connections between Availability Zones within a region allow for fast, synchronous replication of data (like in RDS Multi-AZ deployments), ensuring data consistency without noticeable performance impact.",
+    "expZh": "區域內可用區域之間的高頻寬、低延遲網路連線，允許快速、同步地複製資料（例如在 RDS 多可用區域部署中），確保資料一致性而不會產生明顯的效能影響。"
+  },
+  {
+    "qEn": "Which of the following are true regarding the languages that are supported on AWS Lambda? (Choose TWO)",
+    "qZh": "關於 AWS Lambda 支援的語言，下列哪些敘述是正確的？（選擇兩個）",
+    "optionsEn": [
+      "Lambda only supports Python and Node.js, but third party plugins are available to convert code in other languages to these formats.",
+      "Lambda natively supports a number of programming languages such as Node.js, Python, and Java.",
+      "Lambda is AWS’ proprietary programming language for microservices.",
+      "Lambda doesn’t support programming languages; it is a serverless compute service.",
+      "Lambda can support any programming language using an API."
+    ],
+    "optionsZh": [
+      "Lambda 僅支援 Python 和 Node.js，但可以使用第三方外掛程式將其他語言的程式碼轉換為這些格式。",
+      "Lambda 原生支援多種程式語言，例如 Node.js、Python 和 Java。",
+      "Lambda 是 AWS 用於微服務的專有程式語言。",
+      "Lambda 不支援程式語言；它是一個無伺服器運算服務。",
+      "Lambda 可以使用 API 支援任何程式語言。"
+    ],
+    "answers": [1, 4],
+    "expEn": "Lambda natively supports Node.js, Python, Ruby, Java, Go, C#, and PowerShell. Additionally, you can implement a custom runtime (via an API) to use any other programming language.",
+    "expZh": "Lambda 原生支援 Node.js、Python、Ruby、Java、Go、C# 和 PowerShell。此外，您可以實作自訂執行階段（透過 API）來使用任何其他程式語言。"
+  },
+  {
+    "qEn": "What are the capabilities of AWS X-Ray? (Choose TWO)",
+    "qZh": "AWS X-Ray 的功能有哪些？（選擇兩個）",
+    "optionsEn": [
+      "Automatically decouples application components.",
+      "Facilitates tracking of user requests to identify application issues.",
+      "Helps improve application performance.",
+      "Deploys applications to Amazon EC2 instances.",
+      "Deploys applications to on-premises servers."
+    ],
+    "optionsZh": [
+      "自動解耦應用程式組件。",
+      "有助於追蹤使用者請求，以找出應用程式問題。",
+      "幫助提升應用程式效能。",
+      "將應用程式部署到 Amazon EC2 執行個體。",
+      "將應用程式部署到本地伺服器。"
+    ],
+    "answers": [1, 2],
+    "expEn": "AWS X-Ray helps developers analyze and debug distributed applications. It traces user requests as they travel through your application components, helping identify performance bottlenecks and troubleshoot errors.",
+    "expZh": "AWS X-Ray 幫助開發人員分析和除錯分散式應用程式。它會追蹤使用者請求在其經過應用程式組件時的軌跡，協助找出效能瓶頸並排除錯誤。"
+  }
+]

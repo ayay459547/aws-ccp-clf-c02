@@ -16,8 +16,40 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AWS-CCP-CLF-C02",
-  description: "AWS Certified Cloud Practitioner Notes",
+  // 設定 Base URL（解決相對路徑問題）
+  metadataBase: new URL("https://aws-ccp-clf-c02.chen-chan-hsieh.cc/"), // 替換成你的實際上線網址
+
+  // 優化標題 (支援子頁面的動態標題)
+  title: {
+    default: "AWS-CCP-CLF-C02 Notes",
+    template: "%s | AWS CCP Notes", // 當子頁面設定 title 為 "EC2" 時，會顯示 "EC2 | AWS CCP Notes"
+  },
+
+  // 擴充描述與關鍵字
+  description:
+    "Comprehensive study notes and guides for the AWS Certified Cloud Practitioner (CLF-C02) exam.",
+  keywords: [
+    "AWS",
+    "CCP",
+    "CLF-C02",
+    "Cloud Practitioner",
+    "AWS Certification",
+    "Study Notes",
+  ],
+  authors: [{ name: "CHEN CHAN HSIEH", url: "https://github.com/ayay459547" }],
+
+  // 搜尋引擎爬蟲指令
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -27,7 +59,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="en" // 如果你的筆記是中文，記得改成 lang="zh-TW"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">

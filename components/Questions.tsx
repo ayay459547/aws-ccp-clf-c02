@@ -14,7 +14,7 @@ import {
 import { useTheme } from "@mui/material/styles";
 
 import { FULL_AWS_QUIZ_DATA } from "@/lib/questions";
-import Export from "@/components/Export";
+// import Export from "@/components/Export";
 
 type Props = {
   showChinese: boolean;
@@ -60,7 +60,7 @@ const Questions: React.FC<Props> = ({ showChinese }) => {
       <Card
         elevation={0}
         sx={{
-          p: 3,
+          p: 2,
           mb: 4,
           border: "1px solid",
           borderColor: "grey.200",
@@ -96,7 +96,7 @@ const Questions: React.FC<Props> = ({ showChinese }) => {
             sx={{ maxWidth: { sm: 400 } }}
           />
 
-          <Export showChinese={showChinese} />
+          {/* <Export showChinese={showChinese} /> */}
         </Stack>
       </Card>
 
@@ -116,7 +116,7 @@ const Questions: React.FC<Props> = ({ showChinese }) => {
                 borderRadius: 3,
                 border: "1px solid",
                 borderColor: "grey.200",
-                maxHeight: 160,
+                maxHeight: 120,
                 overflowY: "auto",
               }}
             >
@@ -127,7 +127,7 @@ const Questions: React.FC<Props> = ({ showChinese }) => {
                   color={currentIndex === idx ? "primary" : "inherit"}
                   onClick={() => setCurrentIndex(idx)}
                   sx={{
-                    minWidth: 36,
+                    minWidth: 40,
                     height: 36,
                     p: 0,
                     borderRadius: 2,

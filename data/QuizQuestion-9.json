@@ -1,1 +1,974 @@
-[]
+[
+  {
+    "qEn": "An administrator needs to rapidly deploy a popular IT solution and start using it immediately. Where can the administrator find assistance?",
+    "qZh": "管理員需要快速部署一個受歡迎的 IT 解決方案並立即開始使用。管理員可以在哪裡找到協助？",
+    "optionsEn": [
+      "AWS Well-Architected Framework documentation.",
+      "Amazon CloudFront.",
+      "AWS CodeCommit.",
+      "AWS Quick Start reference deployments."
+    ],
+    "optionsZh": [
+      "AWS 良好架構框架 (Well-Architected Framework) 文件。",
+      "Amazon CloudFront。",
+      "AWS CodeCommit。",
+      "AWS 快速入門 (Quick Start) 參考部署。"
+    ],
+    "answers": [3],
+    "expEn": "AWS Quick Starts (now often part of AWS Solutions) are automated reference deployments built by AWS solutions architects and AWS Partners. They help you deploy popular technologies on AWS according to AWS best practices, reducing hundreds of manual procedures into just a few steps.",
+    "expZh": "AWS 快速入門（現在通常是 AWS 解決方案的一部分）是由 AWS 解決方案架構師和 AWS 合作夥伴構建的自動化參考部署。它們幫助您根據 AWS 最佳實踐在 AWS 上部署流行的技術，將數百個手動步驟減少到只需幾個步驟。"
+  },
+  {
+    "qEn": "What is one of the advantages of the Amazon Relational Database Service (Amazon RDS)?",
+    "qZh": "Amazon 關聯式資料庫服務 (Amazon RDS) 的優勢之一是什麼？",
+    "optionsEn": [
+      "It simplifies relational database administration tasks.",
+      "It provides 99.99999999999% reliability and durability.",
+      "It automatically scales databases for loads.",
+      "It enables users to dynamically adjust CPU and RAM resources."
+    ],
+    "optionsZh": [
+      "它簡化了關聯式資料庫的管理任務。",
+      "它提供 99.999999999% 的可靠性和耐久性。",
+      "它根據負載自動擴展資料庫。",
+      "它讓使用者能動態調整 CPU 和 RAM 資源。"
+    ],
+    "answers": [0],
+    "expEn": "Amazon RDS is a managed service that automates time-consuming administrative tasks such as hardware provisioning, database setup, patching, and backups, allowing you to focus on your applications.",
+    "expZh": "Amazon RDS 是一項受管服務，它將耗時的管理任務自動化，例如硬體配置、資料庫設定、修補和備份，讓您可以專注於應用程式。"
+  },
+  {
+    "qEn": "Which of the following AWS Cloud services can be used to run a customer-managed relational database?",
+    "qZh": "下列哪項 AWS 雲端服務可用於執行客戶管理的關聯式資料庫？",
+    "optionsEn": [
+      "Amazon EC2.",
+      "Amazon Route 53.",
+      "Amazon ElastiCache.",
+      "Amazon DynamoDB."
+    ],
+    "optionsZh": [
+      "Amazon EC2。",
+      "Amazon Route 53。",
+      "Amazon ElastiCache。",
+      "Amazon DynamoDB。"
+    ],
+    "answers": [0],
+    "expEn": "If you want to fully manage the relational database yourself (including the OS, patching, and configuration), you can install the database software on an Amazon EC2 instance (Infrastructure as a Service).",
+    "expZh": "如果您希望完全自行管理關聯式資料庫（包括作業系統、修補程式和組態設定），您可以將資料庫軟體安裝在 Amazon EC2 執行個體上（基礎設施即服務）。"
+  },
+  {
+    "qEn": "A user is planning to launch two additional Amazon EC2 instances to increase availability. Which action should the user take?",
+    "qZh": "使用者計畫啟動兩個額外的 Amazon EC2 執行個體以提高可用性。使用者應該採取哪項行動？",
+    "optionsEn": [
+      "Launch the instances across multiple Availability Zones in a single AWS Region.",
+      "Launch the instances as EC2 Reserved Instances in the same AWS Region and the same Availability Zone.",
+      "Launch the instances in multiple AWS Regions but in the same Availability Zone.",
+      "Launch the instances as EC2 Spot Instances in the same AWS Region but in different Availability Zones."
+    ],
+    "optionsZh": [
+      "在單一 AWS 區域內的多個可用區域 (Availability Zones) 中啟動執行個體。",
+      "在同一 AWS 區域和同一可用區域中，以 EC2 預留執行個體啟動執行個體。",
+      "在多個 AWS 區域但在同一可用區域中啟動執行個體。",
+      "在同一 AWS 區域但在不同的可用區域中，以 EC2 競價型執行個體啟動執行個體。"
+    ],
+    "answers": [0],
+    "expEn": "To increase availability and protect against a data center failure, resources should be deployed across multiple Availability Zones within the same Region.",
+    "expZh": "為了提高可用性並防止資料中心故障，應將資源部署在同一區域內的多個可用區域中。"
+  },
+  {
+    "qEn": "Which of the following can limit Amazon Simple Storage Service (Amazon S3) bucket access to specific users?",
+    "qZh": "下列哪項可以限制特定使用者存取 Amazon S3 儲存貯體？",
+    "optionsEn": [
+      "A public and private key-pair.",
+      "Amazon Inspector.",
+      "AWS Identity and Access Management (IAM) policies.",
+      "Security Groups."
+    ],
+    "optionsZh": [
+      "公鑰和私鑰對。",
+      "Amazon Inspector。",
+      "AWS Identity and Access Management (IAM) 政策。",
+      "安全群組 (Security Groups)。"
+    ],
+    "answers": [2],
+    "expEn": "IAM policies specify what actions are allowed or denied on what AWS resources (like S3 buckets) and can be attached to specific IAM users or roles to control their access.",
+    "expZh": "IAM 政策指定允許或拒絕對哪些 AWS 資源（如 S3 儲存貯體）執行哪些操作，並可將其附加到特定的 IAM 使用者或角色以控制他們的存取權限。"
+  },
+  {
+    "qEn": "Which AWS service allows companies to connect an Amazon VPC to an on-premises data center? (Select TWO)",
+    "qZh": "哪項 AWS 服務允許公司將 Amazon VPC 連接到本地資料中心？（選擇兩個）",
+    "optionsEn": [
+      "AWS VPN.",
+      "Amazon Redshift.",
+      "API Gateway.",
+      "Amazon Direct Connect."
+    ],
+    "optionsZh": [
+      "AWS VPN。",
+      "Amazon Redshift。",
+      "API Gateway。",
+      "Amazon Direct Connect。"
+    ],
+    "answers": [0, 3],
+    "expEn": "AWS Site-to-Site VPN creates an encrypted connection over the public internet, and AWS Direct Connect creates a dedicated, private network connection from your premises to AWS.",
+    "expZh": "AWS Site-to-Site VPN 透過公共網際網路建立加密連線，而 AWS Direct Connect 建立從您的本地端到 AWS 的專用私有網路連線。"
+  },
+  {
+    "qEn": "Which AWS service or feature can be used to monitor CPU usage?",
+    "qZh": "哪項 AWS 服務或功能可用於監控 CPU 使用率？",
+    "optionsEn": [
+      "AWS CloudTrail.",
+      "VPC Flow Logs.",
+      "Amazon CloudWatch.",
+      "AWS Config."
+    ],
+    "optionsZh": [
+      "AWS CloudTrail。",
+      "VPC 流程日誌 (Flow Logs)。",
+      "Amazon CloudWatch。",
+      "AWS Config。"
+    ],
+    "answers": [2],
+    "expEn": "Amazon CloudWatch is the AWS monitoring service that collects and tracks metrics, such as CPU utilization, disk read/writes, and network traffic for your AWS resources.",
+    "expZh": "Amazon CloudWatch 是 AWS 的監控服務，用於收集和追蹤您的 AWS 資源指標，例如 CPU 使用率、磁碟讀/寫和網路流量。"
+  },
+  {
+    "qEn": "Which task is AWS responsible for in the shared responsibility model for security and compliance?",
+    "qZh": "在安全與合規的責任共擔模型中，AWS 負責哪項任務？",
+    "optionsEn": [
+      "Granting access to individuals and services.",
+      "Encrypting data in transit.",
+      "Updating Amazon EC2 host firmware.",
+      "Updating operating systems."
+    ],
+    "optionsZh": [
+      "授予個人和服務的存取權限。",
+      "加密傳輸中的資料。",
+      "更新 Amazon EC2 主機韌體。",
+      "更新作業系統。"
+    ],
+    "answers": [2],
+    "expEn": "Under the Shared Responsibility Model, AWS is responsible for 'Security OF the Cloud,' which includes maintaining the physical hardware, facilities, and the host virtualization layer (hypervisor and host firmware).",
+    "expZh": "在責任共擔模型下，AWS 負責「雲端本身的安全」，這包含了維護實體硬體、設施和主機虛擬化層（虛擬機監視器和主機韌體）。"
+  },
+  {
+    "qEn": "Which of the following security-related actions are available at no cost?",
+    "qZh": "下列哪些與安全相關的行動是免費提供的？",
+    "optionsEn": [
+      "Calling AWS Support.",
+      "Contacting AWS Professional Services to request a workshop.",
+      "Accessing forums, blogs, and whitepapers.",
+      "Attending AWS classes at a local university."
+    ],
+    "optionsZh": [
+      "致電 AWS 支援 (Support)。",
+      "聯絡 AWS 專業服務 (Professional Services) 以申請研討會。",
+      "存取論壇、部落格和白皮書 (whitepapers)。",
+      "參加當地大學的 AWS 課程。"
+    ],
+    "answers": [2],
+    "expEn": "AWS provides a wealth of security information for free through its documentation, security blogs, forums, and comprehensive whitepapers.",
+    "expZh": "AWS 透過其文件、安全部落格、論壇和全面的白皮書免費提供豐富的安全資訊。"
+  },
+  {
+    "qEn": "Which storage service can be used as a low-cost option for hosting static websites?",
+    "qZh": "哪項儲存服務可用作託管靜態網站的低成本選項？",
+    "optionsEn": [
+      "Amazon Glacier.",
+      "Amazon DynamoDB.",
+      "Amazon Elastic File System (Amazon EFS).",
+      "Amazon Simple Storage Service (Amazon S3)."
+    ],
+    "optionsZh": [
+      "Amazon Glacier。",
+      "Amazon DynamoDB。",
+      "Amazon Elastic File System (Amazon EFS)。",
+      "Amazon Simple Storage Service (Amazon S3)。"
+    ],
+    "answers": [3],
+    "expEn": "Amazon S3 can be configured to act as a highly available, extremely low-cost web server for static content (HTML, CSS, JavaScript, images).",
+    "expZh": "Amazon S3 可以被設定為針對靜態內容（HTML、CSS、JavaScript、圖片）的高度可用、成本極低的 Web 伺服器。"
+  },
+  {
+    "qEn": "According to the AWS shared responsibility model what is the sole responsibility of AWS?",
+    "qZh": "根據 AWS 責任共擔模型，什麼是 AWS 的單獨責任？",
+    "optionsEn": [
+      "Application security.",
+      "Edge location management.",
+      "Patch management.",
+      "Client-side data."
+    ],
+    "optionsZh": [
+      "應用程式安全。",
+      "邊緣站點管理。",
+      "修補管理。",
+      "用戶端資料。"
+    ],
+    "answers": [1],
+    "expEn": "AWS is solely responsible for managing the physical infrastructure of the cloud, which includes Regions, Availability Zones, and Edge Locations.",
+    "expZh": "AWS 獨自負責管理雲端的實體基礎架構，其中包括區域 (Regions)、可用區域 (Availability Zones) 和邊緣站點 (Edge Locations)。"
+  },
+  {
+    "qEn": "Which of the following are pillars of the AWS Well-Architected Framework? (Select TWO)",
+    "qZh": "下列哪些是 AWS 良好架構框架 (Well-Architected Framework) 的支柱？（選擇兩個）",
+    "optionsEn": [
+      "Multiple Availability Zones.",
+      "Performance efficiency.",
+      "Security.",
+      "Encryption usage.",
+      "High availability."
+    ],
+    "optionsZh": [
+      "多可用區域。",
+      "效能效率 (Performance efficiency)。",
+      "安全性 (Security)。",
+      "加密使用。",
+      "高可用性。"
+    ],
+    "answers": [1, 2],
+    "expEn": "The AWS Well-Architected Framework is built on six pillars: Operational Excellence, Security, Reliability, Performance Efficiency, Cost Optimization, and Sustainability.",
+    "expZh": "AWS 良好架構框架建立在六個支柱之上：卓越營運、安全性、可靠性、效能效率、成本優化和永續性。"
+  },
+  {
+    "qEn": "Which AWS service identifies security groups that allow unrestricted access to a user’s AWS resources?",
+    "qZh": "哪項 AWS 服務會找出允許無限制存取使用者 AWS 資源的安全群組？",
+    "optionsEn": [
+      "AWS Trusted Advisor.",
+      "Amazon Inspector.",
+      "Amazon CloudWatch.",
+      "AWS CloudTrail."
+    ],
+    "optionsZh": [
+      "AWS Trusted Advisor。",
+      "Amazon Inspector。",
+      "Amazon CloudWatch。",
+      "AWS CloudTrail。"
+    ],
+    "answers": [0],
+    "expEn": "One of the core security checks performed by AWS Trusted Advisor is identifying security groups that allow unrestricted access (e.g., 0.0.0.0/0) to specific ports.",
+    "expZh": "AWS Trusted Advisor 執行的核心安全檢查之一是找出允許無限制存取（例如 0.0.0.0/0）特定連接埠的安全群組。"
+  },
+  {
+    "qEn": "Which design principles for cloud architecture are recommended when re-architecting a large monolithic application? (Select TWO)",
+    "qZh": "在重新架構大型單體 (monolithic) 應用程式時，建議採用哪些雲端架構設計原則？（選擇兩個）",
+    "optionsEn": [
+      "Use manual monitoring.",
+      "Use fixed servers.",
+      "Implement loose coupling.",
+      "Rely on individual components.",
+      "Design for scalability."
+    ],
+    "optionsZh": [
+      "使用手動監控。",
+      "使用固定伺服器。",
+      "實施鬆散耦合 (loose coupling)。",
+      "依賴個別組件。",
+      "為可擴展性而設計 (Design for scalability)。"
+    ],
+    "answers": [2, 4],
+    "expEn": "When breaking down a monolith, best practices dictate implementing loose coupling (so components can scale or fail independently) and designing for scalability (using elasticity to match demand).",
+    "expZh": "在分解單體應用程式時，最佳實踐指示實施鬆散耦合（以便組件可以獨立擴展或容錯）並為可擴展性而設計（使用彈性來匹配需求）。"
+  },
+  {
+    "qEn": "When architecting cloud applications, which of the following are a key design principle?",
+    "qZh": "在架構雲端應用程式時，下列哪一項是關鍵的設計原則？",
+    "optionsEn": [
+      "Use the largest instance possible.",
+      "Provision capacity for peak load.",
+      "Use the Scrum development process.",
+      "Implement elasticity."
+    ],
+    "optionsZh": [
+      "盡可能使用最大的執行個體。",
+      "為尖峰負載預先佈建容量。",
+      "使用 Scrum 開發流程。",
+      "實施彈性 (Implement elasticity)。"
+    ],
+    "answers": [3],
+    "expEn": "Implementing elasticity is a core cloud design principle. It allows you to provision resources as you need them and release them when you don't, stopping the practice of guessing capacity.",
+    "expZh": "實施彈性是核心的雲端設計原則。它允許您在需要時配置資源，不需要時釋放它們，從而停止猜測容量的做法。"
+  },
+  {
+    "qEn": "A company has deployed several relational databases on Amazon EC2 instances. Every month the database software vendor releases new security patches that need to be applied to the databases. What is the MOST efficient way to apply the security patches?",
+    "qZh": "一家公司在 Amazon EC2 執行個體上部署了多個關聯式資料庫。每個月資料庫軟體供應商都會發布需要套用到資料庫的新安全修補程式。套用這些安全修補程式最有效率 (MOST efficient) 的方法是什麼？",
+    "optionsEn": [
+      "Connect to each database instance on a monthly basis and download and apply the necessary security patches from the vendor.",
+      "Enable automate patching for the instances using the Amazon RDS console.",
+      "In AWS Config. configure a rule for the instances and the required patch level.",
+      "Use AWS Systems Manager to automate database patching according to a schedule."
+    ],
+    "optionsZh": [
+      "每個月連線至每個資料庫執行個體，從供應商下載並套用必要的安全修補程式。",
+      "使用 Amazon RDS 控制台為執行個體啟用自動修補。",
+      "在 AWS Config 中為執行個體設定規則和所需的修補程式等級。",
+      "使用 AWS Systems Manager 根據排程自動執行資料庫修補。"
+    ],
+    "answers": [3],
+    "expEn": "Since the databases are running on EC2 instances (not RDS), the customer is responsible for patching. AWS Systems Manager Patch Manager automates the process of patching managed instances with both security related and other types of updates.",
+    "expZh": "由於資料庫在 EC2 執行個體上執行（而非 RDS），客戶需負責修補。AWS Systems Manager Patch Manager 自動化了使用安全相關更新和其他類型更新來修補受管執行個體的程序。"
+  },
+  {
+    "qEn": "Which mechanism allows developers to access AWS services from application code?",
+    "qZh": "哪種機制允許開發人員從應用程式碼中存取 AWS 服務？",
+    "optionsEn": [
+      "AWS Software Development Kit.",
+      "AWS Management Console.",
+      "AWS CodePipeline.",
+      "AWS Config."
+    ],
+    "optionsZh": [
+      "AWS 軟體開發套件 (SDK)。",
+      "AWS 管理控制台。",
+      "AWS CodePipeline。",
+      "AWS Config。"
+    ],
+    "answers": [0],
+    "expEn": "AWS Software Development Kits (SDKs) provide language-specific APIs that allow developers to easily integrate AWS services into their application code.",
+    "expZh": "AWS 軟體開發套件 (SDK) 提供特定語言的 API，允許開發人員輕鬆地將 AWS 服務整合到他們的應用程式碼中。"
+  },
+  {
+    "qEn": "Which AWS feature will reduce the customer’s total cost of ownership (TCO)?",
+    "qZh": "哪項 AWS 功能將降低客戶的總體擁有成本 (TCO)？",
+    "optionsEn": [
+      "Shared responsibility security model.",
+      "Single tenancy.",
+      "Elastic computing.",
+      "Encryption."
+    ],
+    "optionsZh": [
+      "責任共擔的安全模型。",
+      "單一租戶 (Single tenancy)。",
+      "彈性運算 (Elastic computing)。",
+      "加密。"
+    ],
+    "answers": [2],
+    "expEn": "Elastic computing allows customers to scale resources up or down as needed, ensuring they only pay for what they use, which significantly reduces the TCO compared to provisioning static hardware for peak loads.",
+    "expZh": "彈性運算允許客戶根據需要向上或向下擴展資源，確保他們只為使用的資源付費，與為尖峰負載佈建靜態硬體相比，這顯著降低了 TCO。"
+  },
+  {
+    "qEn": "Which of the following is a benefit of using the AWS Cloud?",
+    "qZh": "下列哪項是使用 AWS 雲端的優點？",
+    "optionsEn": [
+      "Permissive security removes the administrative burden.",
+      "Ability to focus on revenue-generating activities.",
+      "Control over cloud network hardware.",
+      "Choice of specific cloud hardware vendors."
+    ],
+    "optionsZh": [
+      "寬鬆的安全性消除了管理負擔。",
+      "能夠專注於創造營收的活動。",
+      "對雲端網路硬體的控制。",
+      "可選擇特定的雲端硬體供應商。"
+    ],
+    "answers": [1],
+    "expEn": "By offloading 'undifferentiated heavy lifting' (like maintaining physical servers and data centers) to AWS, organizations can focus their IT resources on developing applications that generate revenue and provide business value.",
+    "expZh": "透過將「無差別的繁重工作」（如維護實體伺服器和資料中心）卸載給 AWS，組織可以將 IT 資源集中在開發創造營收並提供商業價值的應用程式上。"
+  },
+  {
+    "qEn": "Which of the following are categories of AWS Trusted Advisor? (Select TWO)",
+    "qZh": "下列哪些是 AWS Trusted Advisor 的分類？（選擇兩個）",
+    "optionsEn": [
+      "Fault Tolerance.",
+      "Instance Usage.",
+      "Infrastructure.",
+      "Performance.",
+      "Storage Capacity."
+    ],
+    "optionsZh": [
+      "容錯 (Fault Tolerance)。",
+      "執行個體使用情況。",
+      "基礎架構。",
+      "效能 (Performance)。",
+      "儲存容量。"
+    ],
+    "answers": [0, 3],
+    "expEn": "AWS Trusted Advisor provides best practice checks across five categories: Cost Optimization, Performance, Security, Fault Tolerance, and Service Limits.",
+    "expZh": "AWS Trusted Advisor 跨五個類別提供最佳實踐檢查：成本優化、效能、安全性、容錯和服務限制。"
+  },
+  {
+    "qEn": "What is Amazon CloudWatch?",
+    "qZh": "什麼是 Amazon CloudWatch？",
+    "optionsEn": [
+      "A code repository with customizable build and team commit features.",
+      "A metrics repository with customizable notification thresholds and channels.",
+      "A security configuration repository with threat analytics.",
+      "A rule repository of a web application firewall with automated vulnerability prevention features."
+    ],
+    "optionsZh": [
+      "具有可自訂建置和團隊提交功能的程式碼儲存庫。",
+      "具有可自訂通知閾值和管道的指標儲存庫 (metrics repository)。",
+      "具有威脅分析的安全組態儲存庫。",
+      "具有自動化漏洞防禦功能的 Web 應用程式防火牆規則儲存庫。"
+    ],
+    "answers": [1],
+    "expEn": "Amazon CloudWatch functions as a metrics repository. It collects metrics from AWS services and your applications, allowing you to set alarms with thresholds to trigger notifications or automated actions.",
+    "expZh": "Amazon CloudWatch 充當指標儲存庫。它收集來自 AWS 服務和您應用程式的指標，讓您可以設定帶有閾值的警報，以觸發通知或自動化操作。"
+  },
+  {
+    "qEn": "Under the AWS shared responsibility model, which of the following activities are the customer’s responsibility? (Select TWO)",
+    "qZh": "在 AWS 責任共擔模型下，下列哪些活動是客戶的責任？（選擇兩個）",
+    "optionsEn": [
+      "Patching operating system components for Amazon Relational Database Server (Amazon RDS).",
+      "Encrypting data on the client-side.",
+      "Training the data center staff.",
+      "Configuring Network Access Control Lists (ACL).",
+      "Maintaining environmental controls within a data center."
+    ],
+    "optionsZh": [
+      "修補 Amazon Relational Database Server (RDS) 的作業系統組件。",
+      "在用戶端加密資料。",
+      "培訓資料中心工作人員。",
+      "設定網路存取控制清單 (ACL)。",
+      "維護資料中心內的環境控制。"
+    ],
+    "answers": [1, 3],
+    "expEn": "The customer is responsible for 'Security IN the Cloud', which includes configuring network firewalls (like Network ACLs) and protecting their data (like client-side encryption).",
+    "expZh": "客戶負責「雲端內部的安全」，其中包括設定網路防火牆（如網路 ACL）和保護其資料（如用戶端加密）。"
+  },
+  {
+    "qEn": "Under the shared responsibility model, which of the following is a shared control between a customer and AWS?",
+    "qZh": "在責任共擔模型下，下列哪一項是客戶與 AWS 之間的共同控制項 (shared control)？",
+    "optionsEn": [
+      "Physical controls.",
+      "Patch management.",
+      "Zone security.",
+      "Data center auditing."
+    ],
+    "optionsZh": [
+      "實體控制。",
+      "修補管理 (Patch management)。",
+      "區域安全 (Zone security)。",
+      "資料中心稽核。"
+    ],
+    "answers": [1],
+    "expEn": "Patch management is a shared control. AWS is responsible for patching the underlying infrastructure, while the customer is responsible for patching their guest OS and applications.",
+    "expZh": "修補管理是一項共同控制。AWS 負責修補底層基礎架構，而客戶負責修補其客體作業系統和應用程式。"
+  },
+  {
+    "qEn": "Which AWS service is used to pay AWS bills, and monitor usage and budget costs?",
+    "qZh": "哪項 AWS 服務用於支付 AWS 帳單，並監控使用情況和預算成本？",
+    "optionsEn": [
+      "AWS Billing and Cost Management.",
+      "Consolidated billing.",
+      "Amazon CloudWatch.",
+      "Amazon QuickSight."
+    ],
+    "optionsZh": [
+      "AWS 帳單與成本管理 (Billing and Cost Management)。",
+      "合併帳單。",
+      "Amazon CloudWatch。",
+      "Amazon QuickSight。"
+    ],
+    "answers": [0],
+    "expEn": "AWS Billing and Cost Management is the service where you can pay your bills, monitor your usage via Cost Explorer, and set up tracking via AWS Budgets.",
+    "expZh": "AWS 帳單與成本管理 (Billing and Cost Management) 是您可以支付帳單、透過 Cost Explorer 監控用量，以及透過 AWS Budgets 設定追蹤的服務。"
+  },
+  {
+    "qEn": "How do customers benefit from Amazon’s massive economies of scale?",
+    "qZh": "客戶如何從 Amazon 巨大的規模經濟中獲益？",
+    "optionsEn": [
+      "Periodic price reductions as the result of Amazon’s operational efficiencies.",
+      "New Amazon EC2 instance types providing the latest hardware.",
+      "The ability to scale up and down when needed.",
+      "Increased reliability in the underlying hardware of Amazon EC2 instances."
+    ],
+    "optionsZh": [
+      "由於 Amazon 營運效率的提升，會定期調降價格。",
+      "提供最新硬體的全新 Amazon EC2 執行個體類型。",
+      "需要時向上和向下擴展的能力。",
+      "Amazon EC2 執行個體底層硬體的可靠性提高。"
+    ],
+    "answers": [0],
+    "expEn": "Because AWS aggregates usage from hundreds of thousands of customers, it achieves massive economies of scale. AWS passes these savings back to customers in the form of periodic price reductions.",
+    "expZh": "由於 AWS 匯集了數十萬客戶的使用量，因此實現了巨大的規模經濟。AWS 將這些節省下來的成本以定期調降價格的形式回饋給客戶。"
+  },
+  {
+    "qEn": "Which AWS feature allows a company to take advantage of usage tiers for services across multiple member accounts?",
+    "qZh": "哪項 AWS 功能允許公司跨多個成員帳戶利用服務的使用量分層 (usage tiers)？",
+    "optionsEn": [
+      "Service control policies (SCPs).",
+      "Consolidated billing.",
+      "All Upfront Reserved Instances.",
+      "AWS Cost Explorer."
+    ],
+    "optionsZh": [
+      "服務控制政策 (SCPs)。",
+      "合併帳單 (Consolidated billing)。",
+      "全額預付預留執行個體。",
+      "AWS Cost Explorer。"
+    ],
+    "answers": [1],
+    "expEn": "Consolidated billing within AWS Organizations treats all member accounts as one single account. This allows you to combine usage across accounts to reach volume pricing tiers faster, lowering overall costs.",
+    "expZh": "AWS Organizations 內的合併帳單將所有成員帳戶視為單一帳戶。這允許您合併跨帳戶的用量以更快達到數量定價級距，從而降低整體成本。"
+  },
+  {
+    "qEn": "Which AWS services provide a way to extend an on-premises architecture to the aws cloud? (Select TWO)",
+    "qZh": "哪些 AWS 服務提供將本地架構擴展到 AWS 雲端的方法？（選擇兩個）",
+    "optionsEn": [
+      "Amazon EBS.",
+      "Amazon Connect.",
+      "AWS Storage Gateway.",
+      "Amazon CloudFront.",
+      "AWS Direct Connect."
+    ],
+    "optionsZh": [
+      "Amazon EBS。",
+      "Amazon Connect。",
+      "AWS Storage Gateway。",
+      "Amazon CloudFront。",
+      "AWS Direct Connect。"
+    ],
+    "answers": [2, 4],
+    "expEn": "AWS Storage Gateway extends on-premises storage to the cloud, and AWS Direct Connect creates a dedicated physical network connection between on-premises data centers and AWS.",
+    "expZh": "AWS Storage Gateway 將本地端儲存擴展至雲端，而 AWS Direct Connect 則建立本地資料中心與 AWS 之間的專用實體網路連線。"
+  },
+  {
+    "qEn": "Which of the following services will automatically scale with an expected increase in web traffic?",
+    "qZh": "下列哪項服務會隨著預期的網路流量增加而自動擴展？",
+    "optionsEn": [
+      "AWS CodePipeline.",
+      "Elastic Load Balancing.",
+      "Amazon EBS.",
+      "AWS Direct Connect."
+    ],
+    "optionsZh": [
+      "AWS CodePipeline。",
+      "彈性負載平衡 (Elastic Load Balancing)。",
+      "Amazon EBS。",
+      "AWS Direct Connect。"
+    ],
+    "answers": [1],
+    "expEn": "Elastic Load Balancing (ELB) automatically scales its request-handling capacity in response to incoming application traffic without requiring manual intervention.",
+    "expZh": "彈性負載平衡 (ELB) 會自動擴展其請求處理容量，以回應傳入的應用程式流量，而無需手動介入。"
+  },
+  {
+    "qEn": "Which service provides a virtually unlimited amount of online highly durable object storage?",
+    "qZh": "哪項服務提供幾乎無限量、線上、高耐久性的物件儲存？",
+    "optionsEn": [
+      "Amazon Redshift.",
+      "Amazon Elastic File System (Amazon EFS).",
+      "Amazon Elastic Container Service (Amazon ECS).",
+      "Amazon S3."
+    ],
+    "optionsZh": [
+      "Amazon Redshift。",
+      "Amazon Elastic File System (Amazon EFS)。",
+      "Amazon Elastic Container Service (Amazon ECS)。",
+      "Amazon S3。"
+    ],
+    "answers": [3],
+    "expEn": "Amazon Simple Storage Service (S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance.",
+    "expZh": "Amazon Simple Storage Service (S3) 是一種物件儲存服務，提供領先業界的可擴展性、資料可用性、安全性和效能。"
+  },
+  {
+    "qEn": "Which AWS feature should a customer leverage to achieve high availability of an application?",
+    "qZh": "客戶應利用哪項 AWS 功能來實現應用程式的高可用性？",
+    "optionsEn": [
+      "AWS Direct Connect.",
+      "Availability Zones.",
+      "Data centers.",
+      "Amazon Virtual Private Cloud (Amazon VPC)."
+    ],
+    "optionsZh": [
+      "AWS Direct Connect。",
+      "可用區域 (Availability Zones)。",
+      "資料中心。",
+      "Amazon 虛擬私有雲 (VPC)。"
+    ],
+    "answers": [1],
+    "expEn": "Deploying application resources across multiple Availability Zones within a region is the fundamental method to ensure high availability and fault tolerance in AWS.",
+    "expZh": "在一個區域內的多個可用區域部署應用程式資源，是確保 AWS 中高可用性和容錯能力的基礎方法。"
+  },
+  {
+    "qEn": "Which AWS service or feature can enhance network security by blocking requests from a particular network for a web application on AWS? (Select TWO)",
+    "qZh": "哪項 AWS 服務或功能可透過阻擋特定網路對 AWS 上 Web 應用程式的請求來增強網路安全？（選擇兩個）",
+    "optionsEn": [
+      "AWS WAF.",
+      "AWS Trusted Advisor.",
+      "AWS Direct Connect.",
+      "AWS Organizations.",
+      "Network ACLs."
+    ],
+    "optionsZh": [
+      "AWS WAF。",
+      "AWS Trusted Advisor。",
+      "AWS Direct Connect。",
+      "AWS Organizations。",
+      "網路 ACL (Network ACLs)。"
+    ],
+    "answers": [0, 4],
+    "expEn": "AWS WAF can block web requests based on IP addresses, HTTP headers, or custom URIs. Network ACLs act as a subnet-level firewall and can explicitly block traffic from specific IP address blocks.",
+    "expZh": "AWS WAF 可根據 IP 位址、HTTP 標頭或自訂 URI 阻擋 Web 請求。網路 ACL 充當子網路級別的防火牆，可明確阻擋來自特定 IP 位址區塊的流量。"
+  },
+  {
+    "qEn": "Which of the following is a cloud architectural design principle?",
+    "qZh": "下列哪一項是雲端架構設計原則？",
+    "optionsEn": [
+      "Scale up not out.",
+      "Loosely couple components.",
+      "Build monolithic systems.",
+      "Use commercial database software."
+    ],
+    "optionsZh": [
+      "向上擴展 (Scale up) 而非向外擴展 (Scale out)。",
+      "鬆散耦合組件 (Loosely couple components)。",
+      "建構單體式 (monolithic) 系統。",
+      "使用商業資料庫軟體。"
+    ],
+    "answers": [1],
+    "expEn": "Loose coupling is a design principle where components of a system operate independently. If one component fails, it minimizes the risk of cascading failures across the entire system.",
+    "expZh": "鬆散耦合是一種設計原則，系統的組件在其中獨立運作。如果一個組件發生故障，它能將整個系統發生連鎖故障的風險降至最低。"
+  },
+  {
+    "qEn": "Which service enables risk auditing by continuously monitoring and logging account activity, including user actions in the AWS Management Console and AWS SDKs?",
+    "qZh": "哪項服務可透過持續監控和記錄帳戶活動（包含在 AWS 管理控制台和 AWS SDK 中的使用者動作）來實現風險稽核？",
+    "optionsEn": [
+      "Amazon CloudWatch.",
+      "AWS CloudTrail.",
+      "AWS Config.",
+      "AWS Health."
+    ],
+    "optionsZh": [
+      "Amazon CloudWatch。",
+      "AWS CloudTrail。",
+      "AWS Config。",
+      "AWS Health。"
+    ],
+    "answers": [1],
+    "expEn": "AWS CloudTrail is specifically designed for governance, compliance, and operational and risk auditing by recording every API call made in your AWS account.",
+    "expZh": "AWS CloudTrail 專為治理、合規、營運和風險稽核而設計，它會記錄在您 AWS 帳戶中進行的每一次 API 呼叫。"
+  },
+  {
+    "qEn": "Where can AWS compliance and certification reports be downloaded?",
+    "qZh": "可以在哪裡下載 AWS 合規性和認證報告？",
+    "optionsEn": [
+      "AWS Artifact.",
+      "AWS Concierge.",
+      "AWS Certificate Manager.",
+      "AWS Trusted Advisor."
+    ],
+    "optionsZh": [
+      "AWS Artifact。",
+      "AWS Concierge。",
+      "AWS Certificate Manager。",
+      "AWS Trusted Advisor。"
+    ],
+    "answers": [0],
+    "expEn": "AWS Artifact provides on-demand access to AWS' security and compliance reports (like SOC, PCI, ISO) from a central portal.",
+    "expZh": "AWS Artifact 從一個中央入口網站提供對 AWS 安全和合規報告（如 SOC、PCI、ISO）的隨需存取。"
+  },
+  {
+    "qEn": "The financial benefits of using AWS are: (Select TWO)",
+    "qZh": "使用 AWS 的財務效益有：（選擇兩個）",
+    "optionsEn": [
+      "Reduced Total Cost of Ownership (TCO).",
+      "Increased capital expenditure (capex).",
+      "Reduced operational expenditure ( opex ).",
+      "Deferred payment plans for startups.",
+      "Business credit lines for startups."
+    ],
+    "optionsZh": [
+      "降低總體擁有成本 (TCO)。",
+      "增加資本支出 (capex)。",
+      "減少營運支出 (opex)。",
+      "新創公司的延期付款計畫。",
+      "新創公司的企業信用額度。"
+    ],
+    "answers": [0, 2],
+    "expEn": "AWS lowers TCO by eliminating the need to build and maintain data centers, and it replaces large upfront capital expenses (CapEx) with lower, pay-as-you-go operational expenses (OpEx).",
+    "expZh": "AWS 透過消除建立和維護資料中心的需求來降低 TCO，並用較低的、隨收隨付的營運支出 (OpEx) 取代高昂的預付資本支出 (CapEx)。"
+  },
+  {
+    "qEn": "Which AWS service can serve a static website?",
+    "qZh": "哪項 AWS 服務可提供靜態網站服務？",
+    "optionsEn": [
+      "Amazon S3.",
+      "Amazon Route 53.",
+      "Amazon QuickSight.",
+      "AWS X-Ray."
+    ],
+    "optionsZh": [
+      "Amazon S3。",
+      "Amazon Route 53。",
+      "Amazon QuickSight。",
+      "AWS X-Ray。"
+    ],
+    "answers": [0],
+    "expEn": "Amazon S3 has a built-in feature that allows you to easily configure an S3 bucket to host a static website (HTML, CSS, images) without needing to run any web servers.",
+    "expZh": "Amazon S3 具有內建功能，允許您輕鬆設定 S3 儲存貯體來託管靜態網站（HTML、CSS、圖片），而無需執行任何 Web 伺服器。"
+  },
+  {
+    "qEn": "What are the benefits of using the AWS Cloud for companies with customers in many countries around the world (Select TWO)",
+    "qZh": "對於在全球許多國家/地區擁有客戶的公司而言，使用 AWS 雲端的優勢是什麼？（選擇兩個）",
+    "optionsEn": [
+      "Companies can deploy applications in multiple AWS Regions to reduce latency.",
+      "Amazon Translate automatically translates third-party website interfaces into multiple languages.",
+      "Amazon CloudFront has multiple edge locations around the world to reduce latency.",
+      "Amazon Comprehend allows users to build applications that can respond to user requests in many languages.",
+      "Elastic Load Balancing can distribute application web traffic to multiple AWS Regions around the world which reduces latency."
+    ],
+    "optionsZh": [
+      "公司可以在多個 AWS 區域部署應用程式以降低延遲。",
+      "Amazon Translate 會自動將第三方網站介面翻譯成多種語言。",
+      "Amazon CloudFront 在全球擁有多個邊緣站點以降低延遲。",
+      "Amazon Comprehend 允許使用者建立能以多種語言回應使用者請求的應用程式。",
+      "Elastic Load Balancing 可以將應用程式的 Web 流量分配到全球多個 AWS 區域，從而降低延遲。"
+    ],
+    "answers": [0, 2],
+    "expEn": "The AWS Global Infrastructure enables companies to deploy applications in Regions close to their users, and use CloudFront's global edge network to cache content, both of which drastically reduce latency.",
+    "expZh": "AWS 全球基礎架構使公司能夠在靠近其使用者的區域部署應用程式，並使用 CloudFront 的全球邊緣網路來快取內容，這兩者都能大幅降低延遲。"
+  },
+  {
+    "qEn": "Which of the following are main components of the AWS global infrastructure? (Select TWO)",
+    "qZh": "下列哪些是 AWS 全球基礎架構的主要組成部分？（選擇兩個）",
+    "optionsEn": [
+      "Resource groups.",
+      "Availability Zones.",
+      "Security groups.",
+      "Regions.",
+      "Amazon Machine Images (AMIS)."
+    ],
+    "optionsZh": [
+      "資源群組 (Resource groups)。",
+      "可用區域 (Availability Zones)。",
+      "安全群組 (Security groups)。",
+      "區域 (Regions)。",
+      "Amazon Machine Images (AMIs)。"
+    ],
+    "answers": [1, 3],
+    "expEn": "The AWS Global Infrastructure is built around AWS Regions (geographic locations) and Availability Zones (isolated clusters of data centers within those Regions).",
+    "expZh": "AWS 全球基礎架構是圍繞 AWS 區域（地理位置）和可用區域（這些區域內隔離的資料中心叢集）構建的。"
+  },
+  {
+    "qEn": "What is the AWS customer responsible for according to the AWS shared responsibility model?",
+    "qZh": "根據 AWS 責任共擔模型，AWS 客戶負責什麼？",
+    "optionsEn": [
+      "Physical access controls.",
+      "Data encryption.",
+      "Secure disposal of storage devices.",
+      "Environmental risk management."
+    ],
+    "optionsZh": [
+      "實體存取控制。",
+      "資料加密 (Data encryption)。",
+      "安全處置儲存裝置。",
+      "環境風險管理。"
+    ],
+    "answers": [1],
+    "expEn": "Under the Shared Responsibility Model, the customer is responsible for 'Security IN the Cloud', which includes managing their data, setting permissions, and encrypting data at rest and in transit.",
+    "expZh": "在責任共擔模型下，客戶負責「雲端內部的安全」，其中包括管理其資料、設定權限以及對靜態和傳輸中的資料進行加密。"
+  },
+  {
+    "qEn": "If each department within a company has its own AWS account, what is one way to enable consolidated billing?",
+    "qZh": "如果公司內的每個部門都有自己的 AWS 帳戶，啟用合併帳單 (consolidated billing) 的一種方法是什麼？",
+    "optionsEn": [
+      "Use AWS Budgets on each account to pay only to budget.",
+      "Contact AWS Support for a monthly bill.",
+      "Create an AWS Organization from the payer account and invite the other accounts to join.",
+      "Put all invoices into one Amazon Simple Storage Service (Amazon S3) bucket, load data into Amazon Redshift, and then run a billing report."
+    ],
+    "optionsZh": [
+      "在每個帳戶上使用 AWS Budgets，僅支付預算內的費用。",
+      "聯絡 AWS 支援以獲取每月帳單。",
+      "從付款人帳戶建立一個 AWS Organization，並邀請其他帳戶加入。",
+      "將所有發票放入一個 Amazon S3 儲存貯體中，將資料載入 Amazon Redshift，然後執行帳單報告。"
+    ],
+    "answers": [2],
+    "expEn": "AWS Organizations is the service used to enable consolidated billing. You create an Organization in a master (payer) account and invite the departmental accounts to join as members.",
+    "expZh": "AWS Organizations 是用於啟用合併帳單的服務。您在主（付款人）帳戶中建立一個組織，並邀請部門帳戶作為成員加入。"
+  },
+  {
+    "qEn": "What costs are included when comparing AWS Total Cost of Ownership (TCO) with on-premises TCO?",
+    "qZh": "比較 AWS 總體擁有成本 (TCO) 與本地端 TCO 時，包含哪些成本？",
+    "optionsEn": [
+      "Project management.",
+      "Antivirus software licensing.",
+      "Data center security.",
+      "Software development."
+    ],
+    "optionsZh": [
+      "專案管理。",
+      "防毒軟體授權。",
+      "資料中心安全 (Data center security)。",
+      "軟體開發。"
+    ],
+    "answers": [2],
+    "expEn": "When comparing TCO, you must factor in the costs of running an on-premises data center, which includes hardware, power, cooling, and the cost of maintaining physical data center security (which is handled by AWS in the cloud).",
+    "expZh": "在比較 TCO 時，您必須將執行本地資料中心的成本納入考量，其中包括硬體、電力、冷卻以及維護實體資料中心安全（在雲端中由 AWS 處理）的成本。"
+  },
+  {
+    "qEn": "What is the benefit of using AWS managed services, such as Amazon ElastiCache and Amazon Relational Database Service (Amazon RDS)?",
+    "qZh": "使用 Amazon ElastiCache 和 Amazon Relational Database Service (Amazon RDS) 等 AWS 受管服務的好處是什麼？",
+    "optionsEn": [
+      "They require the customer to monitor and replace failing instances.",
+      "They have better performance than customer-managed services.",
+      "They simplify patching and updating underlying OSs.",
+      "They do not require the customer to optimize instance type or size selections."
+    ],
+    "optionsZh": [
+      "它們需要客戶監控並更換故障的執行個體。",
+      "它們的效能優於客戶管理的服務。",
+      "它們簡化了底層作業系統的修補和更新。",
+      "它們不需要客戶優化執行個體類型或大小的選擇。"
+    ],
+    "answers": [2],
+    "expEn": "AWS Managed Services automate administrative burdens such as hardware provisioning, operating system maintenance, software patching, and backups, allowing the customer to focus on their application data.",
+    "expZh": "AWS 受管服務將管理負擔自動化，例如硬體配置、作業系統維護、軟體修補和備份，讓客戶能專注於其應用程式資料。"
+  },
+  {
+    "qEn": "Which services can be used across hybrid AWS Cloud architectures? (Select TWO)",
+    "qZh": "哪些服務可跨混合 AWS 雲端架構使用？（選擇兩個）",
+    "optionsEn": [
+      "Amazon Route 53.",
+      "Virtual Private Gateway.",
+      "Classic Load Balancer.",
+      "Auto Scaling.",
+      "Amazon CloudWatch default metrics."
+    ],
+    "optionsZh": [
+      "Amazon Route 53。",
+      "虛擬私有閘道 (Virtual Private Gateway)。",
+      "傳統負載平衡器 (Classic Load Balancer)。",
+      "自動擴展 (Auto Scaling)。",
+      "Amazon CloudWatch 預設指標。"
+    ],
+    "answers": [0, 1],
+    "expEn": "A Virtual Private Gateway is the AWS-side component of a VPN connection used to link an on-premises network to AWS. Amazon Route 53 can route traffic between on-premises and AWS resources.",
+    "expZh": "虛擬私有閘道 (VGW) 是 VPN 連線的 AWS 端組件，用於將本地網路連結至 AWS。Amazon Route 53 可以在本地端和 AWS 資源之間路由流量。"
+  },
+  {
+    "qEn": "Which statement best describes Elastic Load Balancing?",
+    "qZh": "哪項敘述最能描述彈性負載平衡 (Elastic Load Balancing)?",
+    "optionsEn": [
+      "It translates a domain name into an IP address using DNC.",
+      "It distributes incoming application traffic across one or more Amazon EC2 instances.",
+      "It collects metrics on connected Amazon EC2 instances.",
+      "It automatically adjusts the number of Amazon EC2 instances to support incoming traffic."
+    ],
+    "optionsZh": [
+      "它使用 DNS 將網域名稱轉換為 IP 位址。",
+      "它將傳入的應用程式流量分配到一個或多個 Amazon EC2 執行個體。",
+      "它收集已連線 Amazon EC2 執行個體上的指標。",
+      "它會自動調整 Amazon EC2 執行個體的數量以支援傳入的流量。"
+    ],
+    "answers": [1],
+    "expEn": "Elastic Load Balancing (ELB) automatically distributes incoming application traffic across multiple targets, such as Amazon EC2 instances, containers, and IP addresses, to ensure no single target is overwhelmed.",
+    "expZh": "彈性負載平衡 (ELB) 會自動將傳入的應用程式流量分配到多個目標（例如 Amazon EC2 執行個體、容器和 IP 位址），以確保沒有單一目標過載。"
+  },
+  {
+    "qEn": "Which of the following is a fast and reliable NoSQL database service?",
+    "qZh": "下列哪一項是快速且可靠的 NoSQL 資料庫服務？",
+    "optionsEn": [
+      "Amazon Redshift.",
+      "Amazon RDS.",
+      "Amazon DynamoDB.",
+      "Amazon S3."
+    ],
+    "optionsZh": [
+      "Amazon Redshift。",
+      "Amazon RDS。",
+      "Amazon DynamoDB。",
+      "Amazon S3。"
+    ],
+    "answers": [2],
+    "expEn": "Amazon DynamoDB is a key-value and document database (NoSQL) that delivers single-digit millisecond performance at any scale.",
+    "expZh": "Amazon DynamoDB 是一個鍵值 (key-value) 和文件資料庫 (NoSQL)，在任何規模下都能提供個位數毫秒的效能。"
+  },
+  {
+    "qEn": "Which AWS service would you use to obtain compliance reports and certificates?",
+    "qZh": "您會使用哪項 AWS 服務來取得合規報告和認證？",
+    "optionsEn": [
+      "AWS Artifact.",
+      "AWS Lambda.",
+      "Amazon Inspector.",
+      "AWS Certificate Manager."
+    ],
+    "optionsZh": [
+      "AWS Artifact。",
+      "AWS Lambda。",
+      "Amazon Inspector。",
+      "AWS Certificate Manager (ACM)。"
+    ],
+    "answers": [0],
+    "expEn": "AWS Artifact provides a central portal for on-demand access to AWS' security and compliance reports (e.g., ISO certifications, PCI DSS reports).",
+    "expZh": "AWS Artifact 提供了一個中央入口網站，供隨需存取 AWS 的安全和合規報告（例如 ISO 認證、PCI DSS 報告）。"
+  },
+  {
+    "qEn": "Which AWS services are defined as global instead of regional? (Select TWO)",
+    "qZh": "哪些 AWS 服務被定義為全球性 (global) 而非區域性 (regional) 的？（選擇兩個）",
+    "optionsEn": [
+      "Amazon Route 53.",
+      "Amazon EC2.",
+      "Amazon S3.",
+      "Amazon CloudFront.",
+      "Amazon DynamoDB."
+    ],
+    "optionsZh": [
+      "Amazon Route 53。",
+      "Amazon EC2。",
+      "Amazon S3。",
+      "Amazon CloudFront。",
+      "Amazon DynamoDB。"
+    ],
+    "answers": [0, 3],
+    "expEn": "Amazon Route 53 (DNS) and Amazon CloudFront (CDN) operate globally across all edge locations. Their configuration is managed at a global level, not tied to a specific AWS Region. (IAM is also a global service).",
+    "expZh": "Amazon Route 53 (DNS) 和 Amazon CloudFront (CDN) 跨越所有邊緣站點在全球範圍內運作。它們的組態設定在全域層級進行管理，不與特定的 AWS 區域綁定。（IAM 也是一項全球服務）。"
+  },
+  {
+    "qEn": "How would an AWS customer easily apply common access controls to a large set of users?",
+    "qZh": "AWS 客戶如何輕鬆地將通用的存取控制套用到大量使用者？",
+    "optionsEn": [
+      "Apply an IAM policy to an IAM group.",
+      "Apply an IAM policy to an IAM role.",
+      "Apply the same IAM policy to all IAM users with access to the same workload.",
+      "Apply an IAM policy to an Amazon Cognito user pool."
+    ],
+    "optionsZh": [
+      "將 IAM 政策套用至 IAM 群組 (IAM group)。",
+      "將 IAM 政策套用至 IAM 角色 (IAM role)。",
+      "將相同的 IAM 政策套用至可存取相同工作負載的所有 IAM 使用者。",
+      "將 IAM 政策套用至 Amazon Cognito 使用者池 (user pool)。"
+    ],
+    "answers": [0],
+    "expEn": "An IAM Group is a collection of IAM users. By attaching an IAM policy to a group, all users in that group inherit those permissions, making it easy to manage access for large sets of users.",
+    "expZh": "IAM 群組是 IAM 使用者的集合。透過將 IAM 政策附加到群組，該群組中的所有使用者都會繼承這些權限，從而輕鬆管理大量使用者的存取權。"
+  },
+  {
+    "qEn": "Which of the following is an important architectural design principle when designing cloud applications?",
+    "qZh": "設計雲端應用程式時，下列哪一項是重要的架構設計原則？",
+    "optionsEn": [
+      "Use multiple Availability Zones.",
+      "Use tightly coupled components.",
+      "Use open source software.",
+      "Provision extra capacity."
+    ],
+    "optionsZh": [
+      "使用多個可用區域 (Availability Zones)。",
+      "使用緊密耦合 (tightly coupled) 的組件。",
+      "使用開源軟體。",
+      "預先配置額外的容量。"
+    ],
+    "answers": [0],
+    "expEn": "Designing for failure is a core principle. Using multiple Availability Zones ensures that an application remains highly available and fault-tolerant even if a single data center fails.",
+    "expZh": "為故障而設計是一個核心原則。使用多個可用區域可確保應用程式即使在單一資料中心發生故障時，仍能保持高度可用性和容錯能力。"
+  },
+  {
+    "qEn": "Which service allows a company with multiple AWS accounts to combine its usage to obtain volume discounts?",
+    "qZh": "哪項服務允許擁有多個 AWS 帳戶的公司合併其用量以獲得數量折扣 (volume discounts)？",
+    "optionsEn": [
+      "AWS Server Migration Service.",
+      "AWS Organizations.",
+      "AWS Budgets.",
+      "AWS Trusted Advisor."
+    ],
+    "optionsZh": [
+      "AWS 伺服器遷移服務 (SMS)。",
+      "AWS Organizations。",
+      "AWS Budgets。",
+      "AWS Trusted Advisor。"
+    ],
+    "answers": [1],
+    "expEn": "AWS Organizations includes a feature called Consolidated Billing, which allows you to combine the usage of all your accounts, often allowing you to reach lower pricing tiers and receive volume discounts.",
+    "expZh": "AWS Organizations 包含一項稱為合併帳單 (Consolidated Billing) 的功能，它允許您合併所有帳戶的用量，通常可以讓您達到較低的定價層級並獲得數量折扣。"
+  }
+]

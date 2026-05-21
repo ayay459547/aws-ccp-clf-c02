@@ -87,7 +87,7 @@ export function LayoutContent({ children }: { children: React.ReactNode }) {
         }}
       >
         {/* --- 頂部導航列 --- */}
-        <AppBar position="sticky" color="secondary" elevation={2}>
+        <AppBar position="sticky" color="secondary" elevation={2} sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}>
           <Container maxWidth="lg">
             <Toolbar
               disableGutters
@@ -197,7 +197,7 @@ export function LayoutContent({ children }: { children: React.ReactNode }) {
           </Container>
         </AppBar>
 
-        <Container maxWidth="md" sx={{ flexGrow: 1, py: 4 }}>
+        <Container maxWidth="xl" disableGutters sx={{ flexGrow: 1 }}>
           {children}
         </Container>
 
